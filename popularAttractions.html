@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>baliyan-popular-attractions.com</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+
+
+                margin: 0;
+                padding: 0;
+                display: felx;
+                height: 50vh;
+                line-height: 1.6;
+                align-items: center;
+                justify-content: center;
+
+                background: #f0f2f5;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+            }
+
+            /* Header styles */
+            header {
+                background-color: #CDDFE2;
+                padding: 15px;
+                width: 97%;
+                margin: 20px;
+                color: #fff;
+                margin-right: auto;
+                border-radius: 110px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin: 0 15px;
+
+            }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            section {
+
+                padding: 20px;
+            }
+
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            fieldset {
+                border: 1px solid #ddd;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            legend {
+                font-size: 1.2em;
+            }
+
+            label {
+                display: block;
+                margin: 10px 0 5px;
+                background-color: 000000;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            .mainsearch {
+                margin-bottom: 10px;
+
+                margin-top: 10px;
+                margin-left: -270px;
+
+                padding: 0px 1px;
+                border-radius: 5px;
+            }
+
+            .mainsearchbutton {
+
+                margin-left: -480px;
+                background: black;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 1rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+
+            .mainsearchbutton:hover {
+                transition: 0.3s;
+                background: #1668e3;
+                color: white;
+
+            }
+
+
+            /* Logo styles */
+            .logo img {
+                margin-top: 6px;
+                margin-bottom: auto;
+                margin-left: 12px;
+                max-width: 200px;
+                height: auto;
+                color: white;
+                border-radius: 300px;
+            }
+
+
+            .header-buttons {
+                color: white;
+                display: flex;
+                align-items: center;
+            }
+
+            .sign-in-btn {
+                background: rgb(0, 0, 0);
+                color: #fff;
+                border: none;
+                padding: 10px 5px;
+                font-size: -1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 25px;
+                margin-left: -300px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .sign-in-btn:hover {
+                transition: 0.3s;
+                background: #1668e3;
+            }
+
+
+
+            .banner {
+                width: 100%;
+                height: 32vh;
+
+                background-position: center;
+                background-size: center;
+            }
+
+
+
+            .content {
+                width: 100%;
+                position: absolute;
+                color: white;
+                top: 45%;
+                transform: translateY(-50%);
+                text-align: center;
+            }
+
+            .content h1 {
+                margin-top: 80px;
+                font-size: 90px;
+                font-weight: 800;
+            }
+
+
+            .banner video {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            @media(min-aspect-ratio: 16/9) {
+                .banner video {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .page {
+                border-radius: 20px;
+                padding: 55px;
+                background-color: #ffe4e1;
+                width: 94%;
+                margin: 40px;
+                margin-right: auto;
+
+            }
+
+            .booking-form-container {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 1600px;
+                margin: auto;
+            }
+
+            .booking-form {
+                width: 100%;
+                max-width: 1500px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .form-group7 {
+                flex: 1 1 120px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-group7 label {
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            .form-group7 input {
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .search-button {
+                background-color: #000000;
+                /* Cyan for button */
+                color: white;
+                border: none;
+                margin-top: 22px;
+                margin-bottom: 22PX;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .search-button:hover {
+                transition: 0.3s;
+                background: #1668e3;
+                /* Darker blue for button hover */
+            }
+
+
+            .hotelbook-button {
+                background-color: #000000;
+                /* Cyan for button */
+                color: white;
+                border: none;
+                margin-top: 22px;
+                margin-bottom: 22PX;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .hotelbook-button:hover {
+                transition: 0.3s;
+                background: #1668e3;
+                color: white;
+                /* Darker blue for button hover */
+            }
+
+            .carousel-container {
+                margin-top: -30px;
+                position: relative;
+                width: 1337px;
+                overflow: hidden;
+            }
+
+            .card-grid-wrapper {
+                overflow: hidden;
+                margin-left: 29px;
+
+                /* Ensures that the overflow is hidden */
+
+            }
+
+            .card-grid {
+                display: flex;
+                overflow-x: auto;
+                /* Enables horizontal scrolling */
+                scroll-behavior: smooth;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                gap: 20px;
+                transition: transform 0.5s ease-in-out;
+                width: max-content;
+            }
+
+            .city-attractions {
+                background-color: #FFFFF7;
+                padding: 40px;
+                border-radius: 20px;
+                margin: 10px 0;
+                color: black;
+                margin-bottom: 20px;
+                width: 94%;
+                margin: 40px;
+                margin-right: auto;
+            }
+
+            .cardcity {
+                margin-top: 30px;
+                margin-left: 16px;
+                margin-bottom: 30px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 275.5px;
+                margin-right: 15px;
+                transition: transform 0.3s;
+            }
+
+            .cardcity:hover {
+                transform: scale(1.05);
+            }
+
+            .cardcity img {
+
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .cardcity-info {
+                padding: 20px;
+
+                text-align: left;
+            }
+
+            .rating {
+                display: flex;
+                justify-content: space-between;
+                color: #4a4a4a;
+                margin-bottom: 10px;
+                font-size: 0.99rem;
+            }
+
+            .rating span:first-child {
+                background-color: black;
+                padding: 4px;
+                border-radius: 8px;
+                color: white;
+                margin-top: -7px;
+                font-weight: bold;
+            }
+
+            .cardcity h2 {
+                font-size: 1.16rem;
+                color: #333;
+                margin-bottom: 5px;
+            }
+
+            .cardcity h2:hover {
+                color: #007bff;
+            }
+
+            .cardcity p {
+                font-size: 1rem;
+                color: #666;
+                margin-bottom: 15px;
+            }
+
+            /* CTA Card */
+            .cta-card {
+                margin-top: 55px;
+                margin-left: 15px;
+
+                margin-bottom: 30px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 280px;
+                margin-right: 40px;
+                transition: transform 0.3s;
+            }
+
+            .cta-card:hover {
+                transform: scale(1.05);
+            }
+
+            .cta-card img {
+                padding: -1px;
+                width: 100%;
+                height: 280px;
+                margin-top: 1px;
+
+
+            }
+
+            .cta-card .cta-content {
+                text-align: center;
+                margin-top: -25px;
+
+                padding: -40px;
+            }
+
+            .cta-card h3 {
+                margin-top: 27px;
+                color: black;
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+            .cta-card button {
+                background-color: black;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .cta-card button:hover {
+                background-color: #0077b6;
+            }
+
+            .card-grid-wrapper2 {
+
+                overflow: hidden;
+
+                margin-left: 29px;
+                /* Ensures that the overflow is hidden */
+
+
+            }
+
+            .arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 2rem;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border-radius: 100px;
+                border: none;
+                cursor: pointer;
+                width: 52px;
+                padding: 5px;
+                z-index: 100;
+            }
+
+            .arrow:hover {
+                background-color: black;
+            }
+
+            #next-arrow {
+                right: 12px;
+            }
+
+            #prev-arrow {
+                left: 12px;
+                display: none;
+                /* Initially hide the previous arrow */
+            }
+
+            .arrow:disabled {
+                background-color: rgba(0, 0, 0, 0.2);
+                /* Grey out disabled arrow */
+                cursor: not-allowed;
+            }
+
+            .worldwide-attractions {
+                background-color: #F7FFFF;
+                padding: 40px;
+                border-radius: 20px;
+                margin: 20px 0;
+                color: black;
+                width: 94%;
+                margin: 40px;
+                margin-right: auto;
+            }
+
+            .card-grid-wrapper-worldwide {
+                margin-left: 29px;
+                overflow: hidden;
+            }
+
+            #next-arrow-worldwide {
+                right: 12px;
+            }
+
+            #prev-arrow-worldwide {
+                left: 12px;
+                display: none;
+            }
+
+            /* Basic footer styling */
+            footer {
+                border-radius: 20px;
+                background-color: white;
+                padding: 40px 0;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            }
+
+            /* Flex container for the footer columns */
+            .footer-container {
+                display: flex;
+                justify-content: space-around;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            /* Styling for each footer column */
+            .footer-column {
+                flex: 1;
+                padding: 0 20px;
+            }
+
+            /* Heading styles */
+            .footer-column h3 {
+                font-size: 18px;
+                color: #003366;
+                margin-bottom: 15px;
+            }
+
+            /* Unordered list style for links */
+            .footer-column ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            /* Individual list item style */
+            .footer-column ul li {
+                margin-bottom: 10px;
+                transition: transform 0.3s ease-in-out;
+                /* Smooth zoom transition */
+            }
+
+            /* Link styles */
+            .footer-column ul li a {
+                text-decoration: none;
+                color: #333;
+                display: inline-block;
+                transition: transform 0.3s ease, color 0.3s ease;
+                /* Add smooth transition for zoom and color change */
+            }
+
+            /* Hover effect: Zoom in on the link and change color */
+            .footer-column ul li a:hover {
+                color: #003366;
+                transform: scale(1.1);
+                /* Zoom the link */
+            }
+
+            /* Social media icon style */
+            .footer-column ul li img {
+                width: 24px;
+                margin-right: 10px;
+                transition: transform 0.3s ease;
+                /* Add zoom effect for icons */
+            }
+
+            /* Hover effect for icons: Zoom in */
+            .footer-column ul li img:hover {
+                transform: scale(1.2);
+                /* Zoom the icons */
+                opacity: 0.7;
+            }
+
+            .lastfooter {
+                color: #000000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#"><img src="/All-photos/logobaliyanwebsite.jpeg" alt="logo"></a>
+            </div>
+
+            <div class="mainsearch">
+                <input type="text" id="location" placeholder="Search Destinations" required>
+
+            </div>
+            <div>
+                <button class="mainsearchbutton">Search</button>
+            </div>
+            <div class="header-title"></div>
+            <button id="signInBtn" class="sign-in-btn">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </button>
+            <button id="signInBtn" class="sign-in-btn">
+                <nav>
+                    <ul>
+                        <li><a href="hiddenGems.html">Hidden Gems</a></li>
+                    </ul>
+                </nav>
+            </button>
+            <button id="signInBtn" class="sign-in-btn">
+                <nav>
+                    <ul>
+                        <li><a href="explorehotels.html">Hotels</a></li>
+                    </ul>
+                </nav>
+            </button>
+
+        </header>
+
+        <div class="banner">
+
+            <section class="page">
+                <div class="booking-form-container">
+                    <form class="booking-form">
+                        <div class="form-group7">
+                            <label for="destination">Where are you going?</label>
+                            <input type="text" id="destination" name="destination" placeholder="Enter destination"
+                                required>
+                        </div>
+                        <div class="form-group7">
+                            <label for="check-in">Check-in date</label>
+                            <input type="date" id="check-in" name="check-in" required>
+                        </div>
+                        <div class="form-group7">
+                            <label for="check-out">Check-out date</label>
+                            <input type="date" id="check-out" name="check-out" required>
+                        </div>
+                        <div class="form-group7">
+                            <label for="children">Number of children</label>
+                            <input type="number" id="children" name="children" min="0" value="0">
+                        </div>
+                        <div class="form-group7">
+                            <label for="adults">Number of adults</label>
+                            <input type="number" id="adults" name="adults" min="1" value="1">
+                        </div>
+                        <div class="form-group7">
+                            <label for="rooms">Number of rooms</label>
+                            <input type="number" id="rooms" name="rooms" min="1" value="1">
+                        </div>
+
+                        <button class="hotelbook-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </section>
+
+
+        </div>
+        <div class="city-attractions">
+            <h1><big>Popular Attractions in India</big></h1>
+            <div class="container">
+                <div class="carousel-container">
+
+                    <!-- Previous Arrow -->
+                    <button class="arrow" id="prev-arrow">&#10094;</button>
+
+                    <!-- Card Grid Wrapper -->
+                    <div class="card-grid-wrapper2">
+                        <div class="card-grid" id="card-grid">
+                            <!-- Card 1 -->
+                            <div class="cardcity">
+                                <img src="/All-photos/mumbaiimage.jpg" alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Mumbai</h2>
+                                    <p>697 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>New Delhi</h2>
+                                    <p>480 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Bengaluru</h2>
+                                    <p>994 hotels</p>
+
+                                </div>
+                            </div>
+
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Chennai</h2>
+                                    <p>468 hotels</p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Gurugram</h2>
+                                    <p>417 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Kolkata</h2>
+                                    <p>446 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Pune</h2>
+                                    <p>632 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Lucknow</h2>
+                                    <p>401 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Dehradun</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Ahmedabad</h2>
+                                    <p>366 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Lazy Gaga Youth Hostel">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Hyderabad</h2>
+                                    <p>406 hotels</p>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <!-- Card 2 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Hostelfly">
+                                <div class="cardcity-info">
+
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+
+                                    <h2>Jaipur</h2>
+                                    <p>712 hotels</p>
+
+                                </div>
+                            </div>
+                            <!-- CTA Card -->
+                            <div class="cta-card">
+
+                                <div class="cta-content">
+                                    <img src="/All-photos/more hotels image.jpg">
+                                    <h3>Explore more hotels</h3>
+                                    <button>Go Now</button>
+                                </div>
+                            </div>
+                            <!-- Add more cards here as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Next Arrow -->
+                    <button class="arrow" id="next-arrow">&#10095;</button>
+                </div>
+
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+        <div class="worldwide-attractions">
+            <h1><big>Popular Attractions Worldwide</big></h1>
+            <div class="container">
+                <div class="carousel-container">
+
+                    <!-- Previous Arrow -->
+                    <button class="arrow" id="prev-arrow-worldwide">&#10094;</button>
+
+                    <!-- Card Grid Wrapper -->
+                    <div class="card-grid-wrapper-worldwide">
+                        <div class="card-grid" id="card-grid-worldwide">
+                            <!-- Card 1 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 1">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Guangzhou</h2>
+                                    <p>5,046 hotels</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Shanghai</h2>
+                                    <p>7,213 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Bangkok</h2>
+                                    <p>2,052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 3">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Shenzhen</h2>
+                                    <p>4,819 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Dubai</h2>
+                                    <p>929 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Hong Kong</h2>
+                                    <p>720 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 7 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Pattaya</h2>
+                                    <p>859 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Yiwu</h2>
+                                    <p>224 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card9 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Phuket</h2>
+                                    <p>1,329 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Kuala Lumpur</h2>
+                                    <p>1,060 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 11 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Bangkok</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 12 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>Bangkok</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- CTA Card -->
+                            <div class="cta-card">
+
+                                <div class="cta-content">
+                                    <img src="/All-photos/more hotels image.jpg">
+                                    <h3>Explore more hotels</h3>
+                                    <button>Go Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Arrow -->
+                    <button class="arrow" id="next-arrow-worldwide">&#10095;</button>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3><big>Contact Us</big></h3>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Service Guarantee</a></li>
+                        <li><a href="#">More Service Info</a></li>
+                        <li>
+                            <a href="#"><img src="/All-photos/facebook footer image.png" alt="Facebook"></a>
+                            <a href="#"><img src="/All-photos/twitter-icon footer image.png" alt="Twitter"></a>
+                            <a href="#"><img src="All-photos/youtube icon footer image.png" alt="YouTube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3><big> About Us </big></h3>
+                    <ul>
+                        <li><a href="#">Privacy Statement</a>
+                        </li>
+
+                        <li><a href="/termsandcond.html">Terms & Conditions</a></li>
+                        <li><a href="/aboutus.html">About CrashCoder.com</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3><big>Other Services</big></h3>
+                    <ul>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Rewards</a></li>
+
+                        <li><a href="#hiddenlink">Hidden Gems</a></li>
+                        <li><a href="#">Popular Attraction</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="lastfooter">
+                <p>&copy; 2024 crashcoder.com All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const cardGrid = document.getElementById('card-grid');
+            const nextArrow = document.getElementById('next-arrow');
+            const prevArrow = document.getElementById('prev-arrow');
+
+            // Get the width of one card (including margin) and the visible area of the card grid
+            const cardWidth = 270; // 250px width + 20px margin-right
+            const visibleArea = document.querySelector('.card-grid-wrapper2').offsetWidth;
+
+            // Track current scroll position (initially 0)
+            let currentScrollPosition = 0;
+
+            // Calculate the total scrollable width (total width of all cards minus the visible area)
+            const totalScrollableWidth = cardGrid.scrollWidth - visibleArea;
+
+            // Add event listener for the next arrow
+            nextArrow.addEventListener('click', () => {
+                // Check if there's more to scroll
+                if (currentScrollPosition < totalScrollableWidth) {
+                    currentScrollPosition += visibleArea;
+
+                    // Ensure it doesn't scroll beyond the max scrollable width
+                    if (currentScrollPosition > totalScrollableWidth) {
+                        currentScrollPosition = totalScrollableWidth;
+                    }
+
+                    // Scroll the card grid
+                    cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+
+                    // Show the previous arrow
+                    prevArrow.style.display = 'block';
+                }
+
+                // Hide the next arrow if we've reached the end
+                if (currentScrollPosition >= totalScrollableWidth) {
+                    nextArrow.style.display = 'none';
+                }
+            });
+
+            // Add event listener for the previous arrow
+            prevArrow.addEventListener('click', () => {
+                // Scroll backwards
+                if (currentScrollPosition > 0) {
+                    currentScrollPosition -= visibleArea;
+
+                    // Ensure it doesn't scroll before the first card
+                    if (currentScrollPosition < 0) {
+                        currentScrollPosition = 0;
+                    }
+
+                    // Scroll the card grid
+                    cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+
+                    // Show the next arrow
+                    nextArrow.style.display = 'block';
+                }
+
+                // Hide the previous arrow if we've scrolled back to the start
+                if (currentScrollPosition === 0) {
+                    prevArrow.style.display = 'none';
+                }
+            });
+            const cardGridWorldwide = document.getElementById('card-grid-worldwide');
+            const nextArrowWorldwide = document.getElementById('next-arrow-worldwide');
+            const prevArrowWorldwide = document.getElementById('prev-arrow-worldwide');
+
+            const cardWidthWorldwide = 270;
+            const visibleAreaWorldwide = document.querySelector('.card-grid-wrapper-worldwide').offsetWidth;
+            let currentScrollPositionWorldwide = 0;
+            const totalScrollableWidthWorldwide = cardGridWorldwide.scrollWidth - visibleAreaWorldwide;
+
+            nextArrowWorldwide.addEventListener('click', () => {
+                if (currentScrollPositionWorldwide < totalScrollableWidthWorldwide) {
+                    currentScrollPositionWorldwide += visibleAreaWorldwide;
+
+                    if (currentScrollPositionWorldwide > totalScrollableWidthWorldwide) {
+                        currentScrollPositionWorldwide = totalScrollableWidthWorldwide;
+                    }
+
+                    cardGridWorldwide.style.transform = `translateX(-${currentScrollPositionWorldwide}px)`;
+                    prevArrowWorldwide.style.display = 'block';
+                }
+
+                if (currentScrollPositionWorldwide >= totalScrollableWidthWorldwide) {
+                    nextArrowWorldwide.style.display = 'none';
+                }
+            });
+
+            prevArrowWorldwide.addEventListener('click', () => {
+                if (currentScrollPositionWorldwide > 0) {
+                    currentScrollPositionWorldwide -= visibleAreaWorldwide;
+
+                    if (currentScrollPositionWorldwide < 0) {
+                        currentScrollPositionWorldwide = 0;
+                    }
+
+                    cardGridWorldwide.style.transform = `translateX(-${currentScrollPositionWorldwide}px)`;
+                    nextArrowWorldwide.style.display = 'block';
+                }
+
+                if (currentScrollPositionWorldwide === 0) {
+                    prevArrowWorldwide.style.display = 'none';
+                }
+            });
+        </script>
+    </body>
+
+</html>

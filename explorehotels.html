@@ -1,0 +1,2189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baliyan-hotels.com</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+
+            margin: 0;
+            padding: 0;
+            display: felx;
+            height: 50vh;
+            line-height: 1.6;
+            align-items: center;
+            justify-content: center;
+
+            background: #f0f2f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Header styles */
+        header {
+
+            padding: 15px;
+            width: 97%;
+            margin: 20px;
+            color: #fff;
+            margin-right: auto;
+            border-radius: 110px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-size: 1.2em;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            background-color: 000000;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .mainsearch {
+            margin-top: 6px;
+            margin-left: -280px;
+            margin-right: -20px;
+            padding: 10px 20px;
+
+        }
+
+        .mainsearchbutton {
+            margin-top: -3.5px;
+            margin-left: -460px;
+            background: black;
+            color: #fff;
+            padding: 10.5px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .mainsearchbutton:hover {
+            transition: 0.3s;
+            background: #1668e3;
+        }
+
+
+        /* Logo styles */
+        .logo img {
+            margin-top: 6px;
+            margin-left: 12px;
+            max-width: 200px;
+            height: auto;
+            color: white;
+            border-radius: 300px;
+        }
+
+
+        .header-buttons {
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .sign-in-btn,
+        .contact-btn {
+            background: rgb(0, 0, 0);
+            color: #fff;
+            border: none;
+            padding: 10px 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 25px;
+            margin-left: -300px;
+        }
+
+        .sign-in-btn:hover,
+        .contact-btn:hover {
+            transition: 0.3s;
+            background: #1668e3;
+        }
+
+
+
+        .banner {
+            width: 100%;
+            height: 80vh;
+
+            background-position: center;
+            background-size: center;
+        }
+
+        .banner button {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 1px;
+            text-align: center;
+            border-radius: 6px;
+            color: white;
+            background: black;
+            border: 2px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .banner button:hover {
+            color: white;
+            background: #1668e3;
+            transition: 0.5s;
+        }
+
+
+        .content66 {
+            width: 100%;
+            position: absolute;
+            color: white;
+            top: 45%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+
+        .content66 h1 {
+            color: white;
+            margin-top: 80px;
+            font-size: 60px;
+            font-weight: 800;
+        }
+
+
+        .banner video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            border-radius: 20px;
+
+        }
+
+        @media(min-aspect-ratio: 16/9) {
+            .banner video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .page {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 55px;
+            background-color: #ffe4e1;
+            width: 94%;
+            margin: 40px;
+            margin-right: auto;
+
+        }
+
+        .booking-form-container {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1600px;
+            margin: auto;
+        }
+
+        .booking-form {
+            width: 100%;
+            max-width: 1500px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-group7 {
+            flex: 1 1 120px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group7 label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group7 input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+
+        .search-button {
+            background-color: #000000;
+            /* Cyan for button */
+            color: white;
+            border: none;
+            margin-top: 22px;
+            margin-bottom: 22PX;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .search-button:hover {
+            transition: 0.3s;
+            background: #1668e3;
+            /* Darker blue for button hover */
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+
+        }
+
+        h1 {
+
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #1d1d1d;
+        }
+
+        .state-buttons {
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+
+        .state-btn {
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            background-color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .state-btn:hover {
+            color: black;
+            background-color: gainsboro;
+        }
+
+        .state-btn.active {
+            background-color: black;
+            /* Different background color for active button */
+            color: white;
+            /* Text color for active button */
+
+        }
+
+        .state-section {
+            display: none;
+            /* Initially hidden */
+        }
+
+        .state-section.active {
+            display: block;
+
+            /* Show the active section */
+        }
+
+        .carousel-container {
+            margin-top: -30px;
+            position: relative;
+            width: 1337px;
+            overflow: hidden;
+        }
+
+        .card-grid-wrapper {
+            overflow: hidden;
+            /* Ensures that the overflow is hidden */
+            margin-left: 15px;
+        }
+
+        .card-grid {
+            display: flex;
+            overflow-x: auto;
+            /* Enables horizontal scrolling */
+            scroll-behavior: smooth;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            gap: 20px;
+            transition: transform 0.5s ease-in-out;
+            width: max-content;
+        }
+
+        .popular-attractions {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #FFF7FF;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 20px 0;
+            color: #03045e;
+            width: 94%;
+            margin: 40px;
+            margin-right: auto;
+        }
+
+        .card {
+            margin-top: 30px;
+            margin-left: 15px;
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 285px;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 20px;
+
+            text-align: left;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            color: #4a4a4a;
+            margin-bottom: 10px;
+            font-size: 0.99rem;
+        }
+
+        .rating span:first-child {
+            background-color: black;
+            padding: 4px;
+            border-radius: 8px;
+            color: white;
+            margin-top: -7px;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            font-size: 1.16rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .card h2:hover {
+            color: #007bff;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            color: #007bff;
+            font-weight: bold;
+
+
+        }
+
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            width: 52px;
+            padding: 5px;
+            z-index: 100;
+        }
+
+        .arrow:hover {
+            background-color: black;
+        }
+
+        #next-arrow-newdelhi {
+            right: 6px;
+        }
+
+        #prev-arrow-newdelhi {
+            left: 16px;
+            display: none;
+            /* Initially hide the previous arrow */
+        }
+
+        #next-arrow-chandigarh {
+            right: 6px;
+        }
+
+        #prev-arrow-chandigarh {
+            left: 16px;
+            display: none;
+            /* Initially hide the previous arrow */
+        }
+
+        #next-arrow-mumbai {
+            right: 6px;
+        }
+
+        #prev-arrow-mumbai {
+            left: 16px;
+            display: none;
+            /* Initially hide the previous arrow */
+        }
+
+        #next-arrow-bangalore {
+            right: 6px;
+        }
+
+        #prev-arrow-bangalore {
+            left: 16px;
+            display: none;
+            /* Initially hide the previous arrow */
+        }
+
+        #next-arrow-kolkata {
+            right: 6px;
+        }
+
+        #prev-arrow-kolkata {
+            left: 16px;
+            display: none;
+            /* Initially hide the previous arrow */
+        }
+
+        .arrow:disabled {
+            background-color: rgba(0, 0, 0, 0.2);
+            /* Grey out disabled arrow */
+            cursor: not-allowed;
+        }
+
+        /* CTA Card */
+        .cta-card {
+            margin-top: 55px;
+            margin-left: 15px;
+
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 289px;
+            margin-right: 15px;
+            transition: transform 0.3s;
+        }
+
+        .cta-card:hover {
+            transform: scale(1.05);
+        }
+
+        .cta-card img {
+            padding: -1px;
+            width: 100%;
+            height: 280px;
+            margin-top: 1px;
+
+
+        }
+
+        .cta-card .cta-content {
+            text-align: center;
+            margin-top: -25px;
+
+            padding: -40px;
+        }
+
+        .cta-card h3 {
+            margin-top: 27px;
+            color: black;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .cta-card button {
+            background-color: black;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cta-card button:hover {
+            background-color: #0077b6;
+        }
+
+        .city-attractions {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #FFFFF7;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 10px 0;
+            color: black;
+            margin-bottom: 20px;
+            width: 94%;
+            margin: 40px;
+            margin-right: auto;
+        }
+
+        .cardcity {
+            margin-top: 30px;
+            margin-left: 15px;
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 276px;
+            margin-right: 15px;
+            transition: transform 0.3s;
+        }
+
+        .cardcity:hover {
+            transform: scale(1.05);
+        }
+
+        .cardcity img {
+
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .cardcity-info {
+            padding: 20px;
+
+            text-align: left;
+        }
+
+        .cardcity h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .cardcity h2:hover {
+            color: #007bff;
+        }
+
+        .cardcity p {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card-grid-wrapper2 {
+
+            overflow: hidden;
+
+            margin-left: 29px;
+            /* Ensures that the overflow is hidden */
+
+        }
+
+        #next-arrow {
+            right: 12px;
+        }
+
+        #prev-arrow {
+            left: 12px;
+            display: none;
+            /* Initially hide the previous arrow */
+        }
+
+        .worldwide-attractions {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #F7FFFF;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 20px 0;
+            color: #03045e;
+            width: 94%;
+            margin: 40px;
+            margin-right: auto;
+        }
+
+        .card-grid-wrapper-worldwide {
+
+            overflow: hidden;
+            margin-left: 29px;
+        }
+
+        #next-arrow-worldwide {
+            right: 12px;
+        }
+
+        #prev-arrow-worldwide {
+            left: 12px;
+            display: none;
+        }
+
+
+        .advantages {
+            border-radius: 20px;
+            background-color: white;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .advantages h2 {
+            margin-left: 60px;
+            margin-bottom: 20px;
+            font-size: 35px;
+            color: black;
+        }
+
+        .advantages ul {
+            margin-left: 60px;
+            font-size: 20px;
+            color: black;
+        }
+
+        /* Basic footer styling */
+        footer {
+            border-radius: 20px;
+            background-color: white;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        /* Flex container for the footer columns */
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Styling for each footer column */
+        .footer-column {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        /* Heading styles */
+        .footer-column h3 {
+            font-size: 18px;
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        /* Unordered list style for links */
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Individual list item style */
+        .footer-column ul li {
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+            /* Smooth zoom transition */
+        }
+
+        /* Link styles */
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+            transition: transform 0.3s ease, color 0.3s ease;
+            /* Add smooth transition for zoom and color change */
+        }
+
+        /* Hover effect: Zoom in on the link and change color */
+        .footer-column ul li a:hover {
+            color: #003366;
+            transform: scale(1.1);
+            /* Zoom the link */
+        }
+
+        /* Social media icon style */
+        .footer-column ul li img {
+            width: 24px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+            /* Add zoom effect for icons */
+        }
+
+        /* Hover effect for icons: Zoom in */
+        .footer-column ul li img:hover {
+            transform: scale(1.2);
+            /* Zoom the icons */
+            opacity: 0.7;
+        }
+
+        .lastfooter {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="/All-photos/logobaliyanwebsite.jpeg" alt="logo"></a>
+        </div>
+
+        <div class="mainsearch">
+            <input type="text" id="location" placeholder="Search Hotels" required>
+        </div>
+        <div>
+            <button class="mainsearchbutton">Search</button>
+        </div>
+        <div class="header-title"></div>
+        <button id="signInBtn" class="sign-in-btn">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </button>
+        <button id="hiddenGemsBtn" class="sign-in-btn">
+            <nav>
+                <ul>
+                    <li><a href="hiddenGems.html">Hidden Gems</a></li>
+                </ul>
+            </nav>
+        </button>
+
+
+
+        <button id="contactBtn" class="contact-btn">
+            <nav>
+                <ul>
+                    <li><a href="popularAttractions.html">Destinations</a></li>
+                </ul>
+            </nav>
+        </button>
+
+    </header>
+
+    <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="/All-videos/websiteVideo 2 hotels.mp4" type="video/mp4">
+        </video>
+
+        <div class="content66">
+            <h1>EXPLORE HOTELS</h1>
+            <button class="button">
+                <nav>
+                    <ul>
+                        <li><a href="#page">Explore Now</a></li>
+                    </ul>
+                </nav>
+            </button>
+        </div>
+    </div>
+    <section class="page" id="page">
+        <div class="booking-form-container">
+            <form class="booking-form">
+                <div class="form-group7">
+                    <label for="destination">Where are you going?</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+                </div>
+                <div class="form-group7">
+                    <label for="check-in">Check-in date</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="form-group7">
+                    <label for="check-out">Check-out date</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="form-group7">
+                    <label for="children">Number of children</label>
+                    <input type="number" id="children" name="children" min="0" value="0">
+                </div>
+                <div class="form-group7">
+                    <label for="adults">Number of adults</label>
+                    <input type="number" id="adults" name="adults" min="1" value="1">
+                </div>
+                <div class="form-group7">
+                    <label for="rooms">Number of rooms</label>
+                    <input type="number" id="rooms" name="rooms" min="1" value="1">
+                </div>
+
+                <button class="search-button" type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="popular-attractions">
+        <h1><big>Popular Hotels in India</big></h1>
+
+        <!-- Buttons for States -->
+        <div class="state-buttons">
+            <button class="state-btn" data-state="newdelhi">New Delhi</button>
+            <button class="state-btn" data-state="chandigarh">Chandigarh</button>
+            <button class="state-btn" data-state="mumbai">Mumbai</button>
+            <button class="state-btn" data-state="bangalore">Bangalore</button>
+            <button class="state-btn" data-state="kolkata">Kolkata</button>
+        </div>
+
+        <!-- Sections for Each State -->
+        <div class="state-sections">
+
+            <!-- Newdelhi Section -->
+            <div class="state-section" id="newdelhi">
+
+                <h1>New Delhi Hotels</h1>
+                <div class="carousel-container">
+
+                    <button class="arrow prev-arrow" id="prev-arrow-newdelhi">&#10094;</button>
+                    <div class="card-grid-wrapper">
+                        <div class="card-grid" id="card-grid-newdelhi">
+                            <div class="card">
+                                <img src="/All-photos/The Park New Delhi image.jpg" alt="newdelhi Hotel 1">
+                                <div class="card-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>136 reviews</span>
+                                    </div>
+                                    <h2>The Park New Delhi</h2>
+                                    <p>The Park Hotel, 15, Sansad Marg, Hanuman Road Area, Connaught Place, New Delhi,
+                                        Delhi 110001, India</p>
+                                    <div class="price">
+                                        <span>From INR 8,076</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/All-photos/Pride Plaza Hotel, Aerocity New Delhi image.jpg"
+                                    alt="newdelhi Hotel 1">
+                                <div class="card-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>56 reviews</span>
+                                    </div>
+                                    <h2>Pride Plaza Hotel, Aerocity New Delhi</h2>
+                                    <p>Asset 5-A, Hospitality District, Indira Gandhi International Airport,
+                                        New Delhi, Delhi 110037, India</p>
+                                    <div class="price">
+                                        <span>From INR 6,820</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/All-photos/Roseate House New Delhi image.jpg" alt="newdelhi Hotel 1">
+                                <div class="card-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>306 reviews</span>
+                                    </div>
+                                    <h2>Roseate House New Delhi</h2>
+                                    <p>Asset 10, Northern Access Rd, Aerocity, Hospitality District, Indira Gandhi
+                                        International Airport, New Delhi, Delhi 110037, India</p>
+                                    <div class="price">
+                                        <span>From INR 10,146</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/All-photos/Holiday Inn New Delhi International Airport image.avif"
+                                    alt="newdelhi Hotel 1">
+                                <div class="card-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>402 reviews</span>
+                                    </div>
+                                    <h2>Holiday Inn New Delhi International Airport</h2>
+                                    <p>Asset Area 12 Hospitality District, Aerocity, New Delhi, Delhi 110037, India</p>
+                                    <div class="price">
+                                        <span>From INR 6,449</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/All-photos/Andaz Delhi Aerocity- Concept by Hyatt image.jpg"
+                                    alt="newdelhi Hotel 1">
+                                <div class="card-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>507 reviews</span>
+                                    </div>
+                                    <h2>Andaz Delhi Aerocity- Concept by Hyatt</h2>
+                                    <p>Aerocity, New Delhi, Delhi 110037, India</p>
+                                    <div class="price">
+                                        <span>From INR 12,050</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/All-photos/Hotel Ark Wood Residency image.jpg" alt="newdelhi Hotel 1">
+                                <div class="card-info">
+                                    <div class="rating">
+                                        <span>3.9/5</span>
+                                        <span>225 reviews</span>
+                                    </div>
+                                    <h2>Hotel Ark Wood Residency</h2>
+                                    <p>Plot No 804, Vasant Kunj Road, New
+                                        Delhi, Delhi 110037, India</p>
+                                    <div class="price">
+                                        <span>From INR 1,304</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/All-photos/Ibis New Delhi Aerocity - An Accor Brand image.jpeg"
+                                    alt="newdelhi Hotel 1">
+                                <div class="card-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>745 reviews</span>
+                                    </div>
+                                    <h2>Ibis New Delhi Aerocity - An Accor Brand</h2>
+                                    <p>Ibis New Delhi Aerocity Delhi, IGI Rd, Aerocity, New Delhi, Delhi 110037, India
+                                    </p>
+                                    <div class="price">
+                                        <span>From INR 5,087</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA Card -->
+
+                            <div class="cta-card">
+
+                                <div class="cta-content">
+                                    <img src="/All-photos/more hotels image.jpg" alt=" Sukhna Lake">
+                                    <h3>Explore more hotels</h3>
+                                    <button>Go Now</button>
+                                </div>
+                            </div>
+
+                            <!-- Add more newdelhi hotels here -->
+                        </div>
+                    </div>
+                    <button class="arrow next-arrow" id="next-arrow-newdelhi">&#10095;</button>
+                </div>
+
+                <script src="script.js"></script>
+            </div>
+
+            <!-- Chandigarh Section -->
+            <div class="state-section" id="chandigarh" style="display:none;">
+                <div class="container">
+                    <h1>Chandigarh Hotels</h1>
+                    <div class="carousel-container">
+                        <button class="arrow prev-arrow" id="prev-arrow-chandigarh">&#10094;</button>
+                        <div class="card-grid-wrapper">
+                            <div class="card-grid" id="card-grid-chandigarh">
+                                <div class="card">
+                                    <img src="/All-photos/JW Marriott Hotel Chandigarh image.jpg"
+                                        alt="Chandigarh Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.4/5</span>
+                                            <span>12,303 reviews</span>
+                                        </div>
+                                        <h2>JW Marriott Hotel Chandigarh</h2>
+                                        <p>Plot no: 6, Dakshin Marg, 35B, Chandigarh, 160035, India</p>
+                                        <div class="price">
+                                            <span>From INR 10,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/The Lalit Chandigarh  image.jpg" alt="Chandigarh Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.4/5</span>
+                                            <span>2,401 reviews</span>
+                                        </div>
+                                        <h2>The Lalit Chandigarh</h2>
+                                        <p>The Lalit, The Lalit Chandigarh, IT Park Rd, Chandigarh, 160101, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,073</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Taj Chandigarh image.jpg" alt="Chandigarh Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.1/5</span>
+                                            <span>3,710 reviews</span>
+                                        </div>
+                                        <h2>Taj Chandigarh</h2>
+                                        <p>Block No. 9, Jan Marg, 17A, Chandigarh, 160017, India</p>
+                                        <div class="price">
+                                            <span>From INR 9,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Novotel Chandigarh Tribune Chowk image.jpg"
+                                        alt="Chandigarh Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>3.9/5</span>
+                                            <span>4.107 reviews</span>
+                                        </div>
+                                        <h2>Novotel Chandigarh Tribune Chowk</h2>
+                                        <p>Plot 181, 3B, Industrial Area Phase I, Chandigarh, 160002, India</p>
+                                        <div class="price">
+                                            <span>From INR 6,848</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="All-photos/Hyatt Centric Sector 17 Chandigarh image.jpg"
+                                        alt="Chandigarh Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.4/5</span>
+                                            <span>2,300 reviews</span>
+                                        </div>
+                                        <h2>Hyatt Centric Sector 17 Chandigarh</h2>
+                                        <p>Block No.10, Sector 17A, 17A, Chandigarh, 160017, India</p>
+                                        <div class="price">
+                                            <span>From INR 9,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Wyndham Chandigarh Mohali image.webp"
+                                        alt="Chandigarh Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.6/5</span>
+                                            <span>3,340 reviews</span>
+                                        </div>
+                                        <h2>Wyndham Chandigarh Mohali</h2>
+                                        <p>Phase 11, Sector 65, Mohali, Punjab 160062, India</p>
+                                        <div class="price">
+                                            <span>From INR 5,907</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/lemon-tree-hotel-chandigarh image.jpg"
+                                        alt="Chandigarh Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.4/5</span>
+                                            <span>7,756 reviews</span>
+                                        </div>
+                                        <h2>Lemon Tree Hotel Chandigarh</h2>
+                                        <p>Plot No. 3, MW, Industrial Area Phase I, Chandigarh, 160002, India</p>
+                                        <div class="price">
+                                            <span>From INR 5,464</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more Chandigarh hotels here -->
+
+                                <!-- CTA Card -->
+                                <div class="cta-card">
+
+                                    <div class="cta-content">
+                                        <img src="/All-photos/more hotels image.jpg">
+                                        <h3>Explore more hotels</h3>
+                                        <button>Go Now</button>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <button class="arrow next-arrow" id="next-arrow-chandigarh">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mumbai Section -->
+            <div class="state-section" id="mumbai" style="display:none;">
+                <div class="container">
+                    <h1>Mumbai Hotels</h1>
+                    <div class="carousel-container">
+                        <button class="arrow prev-arrow" id="prev-arrow-mumbai">&#10094;</button>
+                        <div class="card-grid-wrapper">
+                            <div class="card-grid" id="card-grid-mumbai">
+                                <div class="card">
+                                    <img src="/All-photos/Holiday Inn Mumbai International Airport image.jpg"
+                                        alt="Mumbai Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.2/5</span>
+                                            <span>8,678 reviews</span>
+                                        </div>
+                                        <h2>Holiday Inn Mumbai International Airport</h2>
+                                        <p>Sakinaka Junction, Andheri Kurla Road, Mumbai, Maharashtra 400072, India</p>
+                                        <div class="price">
+                                            <span>From INR 7,979</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/The Lalit Mumbai-Airport image.jpeg" alt="Mumbai Hotel 2">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.0/5</span>
+                                            <span>10,178 reviews</span>
+                                        </div>
+                                        <h2>The Lalit Mumbai-Airport</h2>
+                                        <p>Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Mumbai,
+                                            Maharashtra 400059, India</p>
+                                        <div class="price">
+                                            <span>From INR 7,543</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Taj Santacruz image.jpeg" alt="Mumbai Hotel 3">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.3/5</span>
+                                            <span>8 reviews</span>
+                                        </div>
+                                        <h2>Taj Santacruz</h2>
+                                        <p>Chhatrapati Shivaji Maharaj International Airport, Mumbai, Maharashtra
+                                            400099, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,750</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Hilton Mumbai International Airport image.jpg"
+                                        alt="Mumbai Hotel 4">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.0/5</span>
+                                            <span>8,357 reviews</span>
+                                        </div>
+                                        <h2>Hilton Mumbai International Airport</h2>
+                                        <p>Chhatrapati Shivaji Maharaj Int'l Airport Rd, Ashok, Mumbai, Maharashtra
+                                            400099, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Novotel Mumbai International Airport image.jpg"
+                                        alt="Mumbai Hotel 5">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.3/5</span>
+                                            <span>805 reviews</span>
+                                        </div>
+                                        <h2>Novotel Mumbai International Airport</h2>
+                                        <p>entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station,
+                                            Bori Colony, Marol, Mumbai, Maharashtra 400059, India</p>
+                                        <div class="price">
+                                            <span>From INR 4,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Taj the Trees, Mumbai image.jpg" alt="Mumbai Hotel 6">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.6/5</span>
+                                            <span>9,743 reviews</span>
+                                        </div>
+                                        <h2>Taj the Trees, Mumbai</h2>
+                                        <p>Pirojshanagar, Off Eastern Express Hwy, Mumbai, Maharashtra 400079, India</p>
+                                        <div class="price">
+                                            <span>From INR 10,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/The Westin Mumbai Powai Lake image.jpg" alt="Mumbai Hotel 7">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.1/5</span>
+                                            <span>3,590 reviews</span>
+                                        </div>
+                                        <h2>The Westin Mumbai Powai Lake</h2>
+                                        <p>2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar,
+                                            Powai, Mumbai, Maharashtra 400087, India</p>
+                                        <div class="price">
+                                            <span>From INR 9,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more Mumbai hotels here -->
+
+                                <!-- CTA Card -->
+                                <div class="cta-card">
+
+                                    <div class="cta-content">
+                                        <img src="/All-photos/more hotels image.jpg">
+                                        <h3>Explore more hotels</h3>
+                                        <button>Go Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="arrow next-arrow" id="next-arrow-mumbai">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bangalore Section -->
+            <div class="state-section" id="bangalore" style="display:none;">
+                <div class="container">
+                    <h1>Bangalor Hotels</h1>
+                    <div class="carousel-container">
+                        <button class="arrow prev-arrow" id="prev-arrow-bangalore">&#10094;</button>
+                        <div class="card-grid-wrapper">
+                            <div class="card-grid" id="card-grid-bangalore">
+                                <div class="card">
+                                    <img src="/All-photos/Renaissance Bengaluru Race Course Hotel.jpg"
+                                        alt="Bangalore Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.4/5</span>
+                                            <span>10,761 reviews</span>
+                                        </div>
+                                        <h2>Renaissance Bengaluru Race Course Hotel</h2>
+                                        <p>No 17 And 17, 1, Race Course Rd, Madhava Nagar, Extension, Bengaluru,
+                                            Karnataka 560001, India</p>
+                                        <div class="price">
+                                            <span>From INR 7,999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Hyatt Centric MG Road Bangalore image.jpg"
+                                        alt="bangalore Hotel 2">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>3.9/5</span>
+                                            <span>4,503 reviews</span>
+                                        </div>
+                                        <h2>Hyatt Centric MG Road Bangalore</h2>
+                                        <p>1/1, Swami Vivekananda Road, Ulsoor, Bengaluru, Karnataka 560008, India</p>
+                                        <div class="price">
+                                            <span>From INR 6,250</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Taj Yeshwantpur Bengaluru image.avif" alt="bangalore Hotel 3">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.4/5</span>
+                                            <span>1,007 reviews</span>
+                                        </div>
+                                        <h2>Taj Yeshwantpur Bengaluru</h2>
+                                        <p>2275, Tumkur Rd, Yeshwanthpur Industrial Area, Phase 1, Yeswanthpur,
+                                            Bengaluru, Karnataka 560022, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/The Lalit Ashok image.jpg" alt="bangalore Hotel 4">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>3.6/5</span>
+                                            <span>3,508 reviews</span>
+                                        </div>
+                                        <h2>The Lalit Ashok</h2>
+                                        <p>Kumarakrupa Rd, opposite Golf Club, Kumara Park East, Bengaluru, Karnataka
+                                            560001, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,156</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Sheraton Grand Bangalore Hotel at Brigade Gateway image.jpg"
+                                        alt="bangalore Hotel 5">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.4/5</span>
+                                            <span>4,209 reviews</span>
+                                        </div>
+                                        <h2>Sheraton Grand Bangalore Hotel at Brigade Gateway</h2>
+                                        <p>26/1 Dr. Rajkumar Road Malleswaram, Rajajinagar, Bengaluru, Karnataka 560055,
+                                            India</p>
+                                        <div class="price">
+                                            <span>From INR 11,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Vivanta Bengaluru Residency Road image.jpg"
+                                        alt="bangalore Hotel 6">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.2/5</span>
+                                            <span>2,409 reviews</span>
+                                        </div>
+                                        <h2>Vivanta Bengaluru Residency Road</h2>
+                                        <p>66, Residency Rd, Srinivas Nagar, Shanthala Nagar, Ashok Nagar, Bengaluru,
+                                            Karnataka 560025, India</p>
+                                        <div class="price">
+                                            <span>From INR 7,583</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Welcomhotel by ITC Hotels, Richmond Road, Bengaluru image.jpg"
+                                        alt="bangalore Hotel 7">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.3/5</span>
+                                            <span>8,890 reviews</span>
+                                        </div>
+                                        <h2>Welcomhotel by ITC Hotels, Richmond Road, Bengaluru</h2>
+                                        <p>46, Richmond Rd, Victoria Layout, Bengaluru, Karnataka 560025, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more Bangalore hotels here -->
+                                <!-- CTA Card -->
+                                <div class="cta-card">
+
+                                    <div class="cta-content">
+                                        <img src="/All-photos/more hotels image.jpg">
+                                        <h3>Explore more hotels</h3>
+                                        <button>Go Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="arrow next-arrow" id="next-arrow-bangalore">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Kolkata Section -->
+            <div class="state-section" id="kolkata" style="display:none;">
+                <div class="container">
+                    <h1>Kolkata Hotels</h1>
+                    <div class="carousel-container">
+                        <button class="arrow prev-arrow" id="prev-arrow-kolkata">&#10094;</button>
+                        <div class="card-grid-wrapper">
+                            <div class="card-grid" id="card-grid-kolkata">
+                                <div class="card">
+                                    <img src="/All-photos/JW Marriott Hotel Kolkata image.avif" alt="Kolkata Hotel 1">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.3/5</span>
+                                            <span>2,390 reviews</span>
+                                        </div>
+                                        <h2>JW Marriott Hotel Kolkata</h2>
+                                        <p>4A, JBS Haldane Ave, Kolkata, West Bengal 700105, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/ITC Royal Bengal, a Luxury Collection Hotel, Kolkata image.avif"
+                                        alt="Kolkata Hotel 2">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.3/5</span>
+                                            <span>700 reviews</span>
+                                        </div>
+                                        <h2>ITC Royal Bengal, a Luxury Collection Hotel, Kolkata</h2>
+                                        <p>1, JBS Haldane Ave, Kolkata, West Bengal 700046, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Hyatt Regency Kolkata image.jpeg" alt="Kolkata Hotel 3">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.2/5</span>
+                                            <span>1,209 reviews</span>
+                                        </div>
+                                        <h2>Hyatt Regency Kolkata</h2>
+                                        <p>JA-1, JA Block, Salt Lake City, West Bengal 700098, India</p>
+                                        <div class="price">
+                                            <span>From INR 6,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Taj City Centre New Town image.avif" alt="Kolkata Hotel 4">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.3/5</span>
+                                            <span>809 reviews</span>
+                                        </div>
+                                        <h2>Taj City Centre New Town</h2>
+                                        <p>City Centre Newtown, Action Area II D, Plot no. 11/5 Newtown, West Bengal
+                                            700157, India</p>
+                                        <div class="price">
+                                            <span>From INR 6,799</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/taj bengal image.jpg" alt="Kolkata Hotel 5">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.5/5</span>
+                                            <span>1,2034 reviews</span>
+                                        </div>
+                                        <h2>Taj Bengal</h2>
+                                        <p>34-B, Belvedere Rd, Kolkata, West Bengal 400003, India</p>
+                                        <div class="price">
+                                            <span>From INR 8,999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/Taj Taal Kutir image.webp" alt="Kolkata Hotel 6">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.8/5</span>
+                                            <span>8,490 reviews</span>
+                                        </div>
+                                        <h2>Taj Taal Kutir</h2>
+                                        <p>Eco Tourism Park Plot No 11E/65, AA II, Kolkata, West Bengal 700156, India
+                                        </p>
+                                        <div class="price">
+                                            <span>From INR 7,249</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/All-photos/The Park Kolkata image.jpg" alt="Kolkata Hotel 7">
+                                    <div class="card-info">
+                                        <div class="rating">
+                                            <span>4.0/5</span>
+                                            <span>4,596 reviews</span>
+                                        </div>
+                                        <h2>The Park Kolkata</h2>
+                                        <p>17, Mother Teresa Sarani, Taltala, Kolkata, West Bengal 700016, India</p>
+                                        <div class="price">
+                                            <span>From INR 7,399</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more Kolkata hotels here -->
+                                <!-- CTA Card -->
+                                <div class="cta-card">
+
+                                    <div class="cta-content">
+                                        <img src="/All-photos/more hotels image.jpg">
+                                        <h3>Explore more hotels</h3>
+                                        <button>Go Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="arrow next-arrow" id="next-arrow-kolkata">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="city-attractions">
+        <h1><big>Popular Cities in India</big></h1>
+        <div class="container">
+            <div class="carousel-container">
+
+                <!-- Previous Arrow -->
+                <button class="arrow" id="prev-arrow">&#10094;</button>
+
+                <!-- Card Grid Wrapper -->
+                <div class="card-grid-wrapper2">
+                    <div class="card-grid" id="card-grid">
+                        <!-- Card 1 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/mumbaiimage.jpg" alt="Mumbai">
+                            <div class="cardcity-info">
+
+                                <h2>Mumbai</h2>
+                                <p>697 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/new delhi image.jpg" alt="New Delhi">
+                            <div class="cardcity-info">
+
+                                <h2>New Delhi</h2>
+                                <p>480 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/Bengaluru image popular.webp" alt="Bengaluru">
+                            <div class="card-info">
+
+                                <h2>Bengaluru</h2>
+                                <p>994 hotels</p>
+
+                            </div>
+                        </div>
+
+                        <div class="cardcity">
+                            <img src="/All-photos/Chennai image popular.jpg" alt="Chennai">
+                            <div class="cardcity-info">
+
+                                <h2>Chennai</h2>
+                                <p>468 hotels</p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="cardcity">
+                            <img src="/All-photos/Gurugram image popular.jpg" alt="Gurugram">
+                            <div class="cardcity-info">
+
+                                <h2>Gurugram</h2>
+                                <p>417 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/Kolkata image popular.jpg" alt="Kolkata">
+                            <div class="cardcity-info">
+
+                                <h2>Kolkata</h2>
+                                <p>446 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/Pune image popular.jpg" alt="Pune">
+                            <div class="cardcity-info">
+
+                                <h2>Pune</h2>
+                                <p>632 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/Lucknow image popular.jpg" alt="Lucknow">
+                            <div class="cardcity-info">
+
+                                <h2>Lucknow</h2>
+                                <p>401 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/Dehradun image popular.jpg" alt="Dehradun">
+                            <div class="cardcity-info">
+
+                                <h2>Dehradun</h2>
+                                <p>306 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/Ahmedabad image popular.jpg" alt="Ahmedabad">
+                            <div class="cardcity-info">
+
+                                <h2>Ahmedabad</h2>
+                                <p>366 hotels</p>
+
+                            </div>
+                        </div>
+                        <div class="cardcity">
+                            <img src="/All-photos/Hyderabad image popular.jpg" alt="Hyderabad">
+                            <div class="cardcity-info">
+
+                                <h2>Hyderabad</h2>
+                                <p>406 hotels</p>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <!-- Card 2 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Jaipur, India image.jpg" alt="Jaipur">
+                            <div class="cardcity-info">
+
+
+
+                                <h2>Jaipur</h2>
+                                <p>712 hotels</p>
+
+                            </div>
+                        </div>
+
+                        <!-- Add more cards here as needed -->
+                    </div>
+                </div>
+
+                <!-- Next Arrow -->
+                <button class="arrow" id="next-arrow">&#10095;</button>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+    <div class="worldwide-attractions">
+        <h1><big>Popular Cities Worldwide</big></h1>
+        <div class="container">
+            <div class="carousel-container">
+
+                <!-- Previous Arrow -->
+                <button class="arrow" id="prev-arrow-worldwide">&#10094;</button>
+
+                <!-- Card Grid Wrapper -->
+                <div class="card-grid-wrapper-worldwide">
+                    <div class="card-grid" id="card-grid-worldwide">
+                        <!-- Card 1 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Guangzhou image popular.jpg"
+                                alt="Guangzhou">
+                            <div class="cardcity-info">
+                                <h2>Guangzhou</h2>
+                                <p>5,046 hotels</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Shanghai image popular.jpg"
+                                alt="Shanghai">
+                            <div class="cardcity-info">
+                                <h2>Shanghai</h2>
+                                <p>7,213 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Bangkok image popular.jpg"
+                                alt="Bangkok">
+                            <div class="cardcity-info">
+                                <h2>Bangkok</h2>
+                                <p>2,052 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Shenzhen image popular.jpg"
+                                alt="Shenzhen">
+                            <div class="cardcity-info">
+                                <h2>Shenzhen</h2>
+                                <p>4,819 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Dubai image popular.jpg"
+                                alt="Dubai">
+                            <div class="cardcity-info">
+                                <h2>Dubai</h2>
+                                <p>929 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Hong Kong image popular.jpg"
+                                alt="Hong Kong">
+                            <div class="cardcity-info">
+                                <h2>Hong Kong</h2>
+                                <p>720 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Pattaya image popular.jpg"
+                                alt="Pattaya">
+                            <div class="cardcity-info">
+                                <h2>Pattaya</h2>
+                                <p>859 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Yiwu image popular.jpeg"
+                                alt="Yiwu">
+                            <div class="cardcity-info">
+                                <h2>Yiwu</h2>
+                                <p>224 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card9 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/phuket image popular.jpg"
+                                alt="Phuket">
+                            <div class="cardcity-info">
+                                <h2>Phuket</h2>
+                                <p>1,329 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 10 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Kuala Lumpur image popular.jpg"
+                                alt="Kuala Lumpur">
+                            <div class="cardcity-info">
+                                <h2>Kuala Lumpur</h2>
+                                <p>1,060 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 11 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/amsterdam image popular.webp"
+                                alt="Amsterdam">
+                            <div class="cardcity-info">
+                                <h2>Amsterdam</h2>
+                                <p>2,495 hotels</p>
+                            </div>
+                        </div>
+                        <!-- Card 12 -->
+                        <div class="cardcity">
+                            <img src="/All-photos/Bergen image popular.webp"
+                                alt="Bergen">
+                            <div class="cardcity-info">
+                                <h2>Bergen</h2>
+                                <p>676 hotels</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Next Arrow -->
+                <button class="arrow" id="next-arrow-worldwide">&#10095;</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+    <section class="advantages" id="advantages">
+        <h2>Advantages of Using Our Booking System</h2>
+        <ul>
+            <li>Easy Booking: Our user-friendly system allows you to book bus and airplane tickets in just a few clicks.
+            </li>
+            <li>Real-Time Availability: Check real-time availability and get instant confirmations for your bookings.
+            </li>
+            <li>Secure Transactions: We use secure payment gateways to ensure your transaction details are protected.
+            </li>
+            <li>Comprehensive Guides: Access detailed guides and local insights to enhance your travel experience.</li>
+        </ul>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3><big>Contact Us</big></h3>
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Service Guarantee</a></li>
+                    <li><a href="#">More Service Info</a></li>
+                    <li>
+                        <a href="#"><img
+                                src="/All-photos/facebook footer image.png"
+                                alt="Facebook"></a>
+                        <a href="#"><img src="/All-photos/twitter-icon footer image.png"
+                                alt="Twitter"></a>
+                        <a href="#"><img
+                                src="/All-photos/youtube icon footer image.png"
+                                alt="YouTube"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><big> About Us </big></h3>
+                <ul>
+                    <li><a href="#">Privacy Statement</a>
+                    </li>
+
+                    <li><a href="/termsandcond.html">Terms & Conditions</a></li>
+                    <li><a href="/aboutus.html">About CrashCoder.com</a></li>
+
+
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><big>Other Services</big></h3>
+                <ul>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Rewards</a></li>
+
+                    <li><a href="#hiddenlink">Hidden Gems</a></li>
+                    <li><a href="#">Popular Attraction</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="lastfooter">
+            <p>&copy; 2024 crashcoder.com All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.state-btn');
+            const sections = document.querySelectorAll('.state-section');
+
+            // State section visibility logic
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const state = this.getAttribute('data-state');
+
+                    // Remove 'active' class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add 'active' class to the clicked button
+                    this.classList.add('active');
+
+                    sections.forEach(section => {
+                        section.style.display = 'none'; // Hide all sections
+                    });
+                    document.getElementById(state).style.display = 'block'; // Show the selected section
+
+                    // Reset scroll position for each state when switched
+                    resetCarouselState(state);
+                });
+            });
+
+            // Initially show the first section (New Delhi)
+            document.getElementById('newdelhi').style.display = 'block';
+            buttons[0].classList.add('active'); // Set New Delhi button as active by default
+
+            // Function to reset the carousel state (scroll position, arrows) when switching sections
+            function resetCarouselState(state) {
+                const cardGrid = document.getElementById(`card-grid-${state}`);
+                const nextArrow = document.getElementById(`next-arrow-${state}`);
+                const prevArrow = document.getElementById(`prev-arrow-${state}`);
+
+                // Reset scroll position and transform
+                cardGrid.style.transform = 'translateX(0px)';
+                currentScrollPosition = 0;
+
+                // Set arrow visibility (prev hidden by default, next visible by default)
+                prevArrow.style.display = 'none';
+                nextArrow.style.display = 'block';
+
+                // Recalculate the scrollable width for the new section
+                initializeCarousel(state);
+            }
+
+            // General carousel logic
+            let currentScrollPosition = 0;
+
+            function initializeCarousel(state) {
+                const cardGrid = document.getElementById(`card-grid-${state}`);
+                const nextArrow = document.getElementById(`next-arrow-${state}`);
+                const prevArrow = document.getElementById(`prev-arrow-${state}`);
+
+                const cardWidth = 270; // 250px width + 20px margin-right
+                const visibleArea = document.querySelector(`#${state} .card-grid-wrapper`).offsetWidth;
+                const totalScrollableWidth = cardGrid.scrollWidth - visibleArea;
+
+                nextArrow.addEventListener('click', () => {
+                    if (currentScrollPosition < totalScrollableWidth) {
+                        currentScrollPosition += visibleArea;
+                        if (currentScrollPosition > totalScrollableWidth) {
+                            currentScrollPosition = totalScrollableWidth;
+                        }
+                        cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+                        prevArrow.style.display = 'block';
+                    }
+                    if (currentScrollPosition >= totalScrollableWidth) {
+                        nextArrow.style.display = 'none';
+                    }
+                });
+
+                prevArrow.addEventListener('click', () => {
+                    if (currentScrollPosition > 0) {
+                        currentScrollPosition -= visibleArea;
+                        if (currentScrollPosition < 0) {
+                            currentScrollPosition = 0;
+                        }
+                        cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+                        nextArrow.style.display = 'block';
+                    }
+                    if (currentScrollPosition === 0) {
+                        prevArrow.style.display = 'none';
+                    }
+                });
+            }
+
+            // Initialize carousel for the default section (New Delhi)
+            initializeCarousel('newdelhi');
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.state-btn');
+            const sections = document.querySelectorAll('.state-section');
+
+            // State section visibility logic
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const state = this.getAttribute('data-state');
+                    sections.forEach(section => {
+                        section.style.display = 'none'; // Hide all sections
+                    });
+                    document.getElementById(state).style.display = 'block'; // Show the selected section
+
+                    // Reset scroll position for each state when switched
+                    resetCarouselState(state);
+                });
+            });
+
+            // Initially show the first section (New Delhi)
+            document.getElementById('newdelhi').style.display = 'block';
+
+            // Function to reset the carousel state (scroll position, arrows) when switching sections
+            function resetCarouselState(state) {
+                const cardGrid = document.getElementById(`card-grid-${state}`);
+                const nextArrow = document.getElementById(`next-arrow-${state}`);
+                const prevArrow = document.getElementById(`prev-arrow-${state}`);
+
+                // Reset scroll position and transform
+                cardGrid.style.transform = 'translateX(0px)';
+                currentScrollPosition = 0;
+
+                // Set arrow visibility (prev hidden by default, next visible by default)
+                prevArrow.style.display = 'none';
+                nextArrow.style.display = 'block';
+
+                // Recalculate the scrollable width for the new section
+                initializeCarousel(state);
+            }
+
+            // General carousel logic
+            let currentScrollPosition = 0;
+
+            function initializeCarousel(state) {
+                const cardGrid = document.getElementById(`card-grid-${state}`);
+                const nextArrow = document.getElementById(`next-arrow-${state}`);
+                const prevArrow = document.getElementById(`prev-arrow-${state}`);
+
+                const cardWidth = 270; // 250px width + 20px margin-right
+                const visibleArea = document.querySelector(`#${state} .card-grid-wrapper`).offsetWidth;
+                const totalScrollableWidth = cardGrid.scrollWidth - visibleArea;
+
+                nextArrow.addEventListener('click', () => {
+                    if (currentScrollPosition < totalScrollableWidth) {
+                        currentScrollPosition += visibleArea;
+                        if (currentScrollPosition > totalScrollableWidth) {
+                            currentScrollPosition = totalScrollableWidth;
+                        }
+                        cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+                        prevArrow.style.display = 'block';
+                    }
+                    if (currentScrollPosition >= totalScrollableWidth) {
+                        nextArrow.style.display = 'none';
+                    }
+                });
+
+                prevArrow.addEventListener('click', () => {
+                    if (currentScrollPosition > 0) {
+                        currentScrollPosition -= visibleArea;
+                        if (currentScrollPosition < 0) {
+                            currentScrollPosition = 0;
+                        }
+                        cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+                        nextArrow.style.display = 'block';
+                    }
+                    if (currentScrollPosition === 0) {
+                        prevArrow.style.display = 'none';
+                    }
+                });
+            }
+
+            // Initialize carousel for the default section (New Delhi)
+            initializeCarousel('newdelhi');
+        });
+        const cardGrid = document.getElementById('card-grid');
+        const nextArrow = document.getElementById('next-arrow');
+        const prevArrow = document.getElementById('prev-arrow');
+
+        // Get the width of one card (including margin) and the visible area of the card grid
+        const cardWidth = 270; // 250px width + 20px margin-right
+        const visibleArea = document.querySelector('.card-grid-wrapper2').offsetWidth;
+
+        // Track current scroll position (initially 0)
+        let currentScrollPosition = 0;
+
+        // Calculate the total scrollable width (total width of all cards minus the visible area)
+        const totalScrollableWidth = cardGrid.scrollWidth - visibleArea;
+
+        // Add event listener for the next arrow
+        nextArrow.addEventListener('click', () => {
+            // Check if there's more to scroll
+            if (currentScrollPosition < totalScrollableWidth) {
+                currentScrollPosition += visibleArea;
+
+                // Ensure it doesn't scroll beyond the max scrollable width
+                if (currentScrollPosition > totalScrollableWidth) {
+                    currentScrollPosition = totalScrollableWidth;
+                }
+
+                // Scroll the card grid
+                cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+
+                // Show the previous arrow
+                prevArrow.style.display = 'block';
+            }
+
+            // Hide the next arrow if we've reached the end
+            if (currentScrollPosition >= totalScrollableWidth) {
+                nextArrow.style.display = 'none';
+            }
+        });
+
+        // Add event listener for the previous arrow
+        prevArrow.addEventListener('click', () => {
+            // Scroll backwards
+            if (currentScrollPosition > 0) {
+                currentScrollPosition -= visibleArea;
+
+                // Ensure it doesn't scroll before the first card
+                if (currentScrollPosition < 0) {
+                    currentScrollPosition = 0;
+                }
+
+                // Scroll the card grid
+                cardGrid.style.transform = `translateX(-${currentScrollPosition}px)`;
+
+                // Show the next arrow
+                nextArrow.style.display = 'block';
+            }
+
+            // Hide the previous arrow if we've scrolled back to the start
+            if (currentScrollPosition === 0) {
+                prevArrow.style.display = 'none';
+            }
+        });
+        const cardGridWorldwide = document.getElementById('card-grid-worldwide');
+        const nextArrowWorldwide = document.getElementById('next-arrow-worldwide');
+        const prevArrowWorldwide = document.getElementById('prev-arrow-worldwide');
+
+        const cardWidthWorldwide = 270;
+        const visibleAreaWorldwide = document.querySelector('.card-grid-wrapper-worldwide').offsetWidth;
+        let currentScrollPositionWorldwide = 0;
+        const totalScrollableWidthWorldwide = cardGridWorldwide.scrollWidth - visibleAreaWorldwide;
+
+        nextArrowWorldwide.addEventListener('click', () => {
+            if (currentScrollPositionWorldwide < totalScrollableWidthWorldwide) {
+                currentScrollPositionWorldwide += visibleAreaWorldwide;
+
+                if (currentScrollPositionWorldwide > totalScrollableWidthWorldwide) {
+                    currentScrollPositionWorldwide = totalScrollableWidthWorldwide;
+                }
+
+                cardGridWorldwide.style.transform = `translateX(-${currentScrollPositionWorldwide}px)`;
+                prevArrowWorldwide.style.display = 'block';
+            }
+
+            if (currentScrollPositionWorldwide >= totalScrollableWidthWorldwide) {
+                nextArrowWorldwide.style.display = 'none';
+            }
+        });
+
+        prevArrowWorldwide.addEventListener('click', () => {
+            if (currentScrollPositionWorldwide > 0) {
+                currentScrollPositionWorldwide -= visibleAreaWorldwide;
+
+                if (currentScrollPositionWorldwide < 0) {
+                    currentScrollPositionWorldwide = 0;
+                }
+
+                cardGridWorldwide.style.transform = `translateX(-${currentScrollPositionWorldwide}px)`;
+                nextArrowWorldwide.style.display = 'block';
+            }
+
+            if (currentScrollPositionWorldwide === 0) {
+                prevArrowWorldwide.style.display = 'none';
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
