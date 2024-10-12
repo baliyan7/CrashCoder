@@ -39,11 +39,13 @@
 
 
         .banner {
-            width: 100%;
-            height: 80vh;
-
+            position: relative;
+            width: 1510px;
+            margin: auto;
             background-position: center;
             background-size: center;
+            padding: 1px;
+            height: 600px;
         }
 
         .banner button {
@@ -74,7 +76,7 @@
             width: 100%;
             position: absolute;
             color: white;
-            top: 45%;
+            top: 30%;
             transform: translateY(-50%);
             text-align: center;
         }
@@ -97,6 +99,7 @@
             right: 0;
             bottom: 0;
             z-index: -1;
+            border-radius: 20px;
         }
 
         @media(min-aspect-ratio: 16/9) {
@@ -110,16 +113,17 @@
         header {
 
             padding: 20px;
-            width: 97%;
-            margin: 20px;
             color: #fff;
-            margin-right: auto;
             border-radius: 110px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
             text-align: center;
+            width: 1425px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 40px;
         }
 
         nav ul {
@@ -178,10 +182,10 @@
 
         .mainsearch {
             margin-bottom: 10px;
-           
+
             margin-top: 6px;
             margin-left: -250px;
-            
+
             border-radius: 5px;
         }
 
@@ -628,9 +632,6 @@
 
 
         .hero7 {
-            margin-top: 40px;
-            margin-left: 40px;
-            margin-right: 50px;
             border-radius: 20px;
             display: flex;
             justify-content: space-between;
@@ -638,6 +639,10 @@
             background-color: #d7d3e2;
             /* Light cyan for hero section background */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 1425px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
 
         }
 
@@ -776,9 +781,10 @@
             border-radius: 20px;
             padding: 55px;
             background-color: #ffe4e1;
-            width: 94%;
-            margin: 40px;
-            margin-right: auto;
+            width: 1425px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -849,11 +855,11 @@
             background-color: #fff7ff;
             padding: 40px;
             border-radius: 20px;
-            margin: 10px 0;
             color: black;
-            width: 94%;
-            margin: 40px;
-            margin-right: auto;
+            width: 1425px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
 
         .popular-attractions h2 {
@@ -1047,12 +1053,12 @@
             background-color: #FFFFF7;
             padding: 40px;
             border-radius: 20px;
-            margin: 10px 0;
             color: black;
             margin-bottom: 20px;
-            width: 94%;
-            margin: 40px;
-            margin-right: auto;
+            width: 1425px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -1110,11 +1116,11 @@
             background-color: #F7FFFF;
             padding: 40px;
             border-radius: 20px;
-            margin: 20px 0;
             color: black;
-            width: 94%;
-            margin: 40px;
-            margin-right: auto;
+            width: 1425px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -1161,11 +1167,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 60px;
             border-radius: 20px;
-            margin: 20px 0;
+
             color: black;
-            width: 94%;
-            margin: 40px;
-            margin-right: auto;
+            width: 1425px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
 
 
@@ -1318,8 +1325,10 @@
             padding: 40px 0;
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-left: 40px;
-            margin-right: 50px;
+            width: 1425px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -2128,9 +2137,7 @@
                     </div>
                 </div>
                 <div class="attraction-card">
-                   
-                        <img src="./All-photos/vrandawan image.png">
-                    
+                    <a><img src="./All-photos/vrandawan image.png"></a>
                     <div class="attraction-info">
 
                         <div class="attraction-info-rating">
@@ -2951,8 +2958,8 @@
                     <li><a href="#">Privacy Statement</a>
                     </li>
 
-                    <li><a href="/termsandcond.html">Terms & Conditions</a></li>
-                    <li><a href="/aboutus.html">About CrashCoder.com</a></li>
+                    <li><a href="termsandcond.html">Terms & Conditions</a></li>
+                    <li><a href="aboutus.html">About CrashCoder.com</a></li>
 
 
                 </ul>
@@ -3281,11 +3288,5 @@
             document.getElementById('reviewForm').reset();
         });
     </script>
-
-
-
-
-
 </body>
-
 </html>
