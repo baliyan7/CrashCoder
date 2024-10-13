@@ -35,10 +35,12 @@
             header {
                 background-color: #CDDFE2;
                 padding: 15px;
-                width: 97%;
+                width: 1425px;
                 margin: 20px;
                 color: #fff;
-                margin-right: auto;
+                margin: auto;
+                margin-top: 30px;
+
                 border-radius: 110px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 display: flex;
@@ -112,7 +114,7 @@
 
             .mainsearchbutton {
 
-                margin-left: -480px;
+                margin-left: -470px;
                 background: black;
                 color: #fff;
                 padding: 10px 20px;
@@ -174,7 +176,7 @@
 
             .banner {
                 width: 100%;
-                height: 32vh;
+
 
                 background-position: center;
                 background-size: center;
@@ -216,9 +218,10 @@
                 border-radius: 20px;
                 padding: 55px;
                 background-color: #ffe4e1;
-                width: 94%;
-                margin: 40px;
-                margin-right: auto;
+                width: 1425px;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
 
             }
 
@@ -332,12 +335,16 @@
                 border-radius: 20px;
                 margin: 10px 0;
                 color: black;
-                margin-bottom: 20px;
-                width: 94%;
-                margin: 40px;
-                margin-right: auto;
+                width: 1425px;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
             }
-
+            .city-attractions h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 35px;
+            }
             .cardcity {
                 margin-top: 30px;
                 margin-left: 16px;
@@ -345,7 +352,7 @@
                 background-color: white;
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                width: 275.5px;
+                width: 275.85px;
                 margin-right: 15px;
                 transition: transform 0.3s;
             }
@@ -419,41 +426,40 @@
             }
 
             .cta-card img {
-                padding: -1px;
+
                 width: 100%;
-                height: 280px;
-                margin-top: 1px;
+                height: 200px;
+                margin-top: -25px;
+                padding: -80px;
 
 
             }
 
             .cta-card .cta-content {
-                text-align: center;
-                margin-top: -25px;
+                padding: 20px;
 
-                padding: -40px;
+                text-align: left;
+
             }
 
-            .cta-card h3 {
-                margin-top: 27px;
-                color: black;
-                font-size: 26px;
-                margin-bottom: 10px;
+            .cta-card h2 {
+                font-size: 1.16rem;
+                color: #333;
+                margin-bottom: 5px;
             }
 
-            .cta-card button {
-                background-color: black;
-                color: #fff;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 5px;
-                cursor: pointer;
-                font-weight: bold;
+            .cta-card h2:hover {
+                color: #007bff;
             }
 
-            .cta-card button:hover {
-                background-color: #0077b6;
+            .cta-card p {
+                font-size: 1rem;
+                color: #666;
+                margin-bottom: 15px;
             }
+
+
+
 
             .card-grid-wrapper2 {
 
@@ -504,13 +510,17 @@
                 background-color: #F7FFFF;
                 padding: 40px;
                 border-radius: 20px;
-                margin: 20px 0;
                 color: black;
-                width: 94%;
-                margin: 40px;
-                margin-right: auto;
+                width: 1425px;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
             }
-
+            .worldwide-attractions h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 35px;
+            }
             .card-grid-wrapper-worldwide {
                 margin-left: 29px;
                 overflow: hidden;
@@ -532,8 +542,11 @@
                 padding: 40px 0;
                 font-family: Arial, sans-serif;
                 text-align: center;
+                width: 1425px;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
             }
 
             /* Flex container for the footer columns */
@@ -604,6 +617,21 @@
             .lastfooter {
                 color: #000000;
             }
+
+            .discover h2 {
+                width: 1425px;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: #232b2b;
+                font-size: 45px;
+                text-align: center;
+                font-weight: bold;
+                margin-top: 40px;
+                color: white;
+            }
         </style>
     </head>
 
@@ -644,47 +672,17 @@
             </button>
 
         </header>
-
+        <div class="discover">    
+            <h2>Discover Popular Places / Destinations</h2>
+        </div>
         <div class="banner">
 
-            <section class="page">
-                <div class="booking-form-container">
-                    <form class="booking-form">
-                        <div class="form-group7">
-                            <label for="destination">Where are you going?</label>
-                            <input type="text" id="destination" name="destination" placeholder="Enter destination"
-                                required>
-                        </div>
-                        <div class="form-group7">
-                            <label for="check-in">Check-in date</label>
-                            <input type="date" id="check-in" name="check-in" required>
-                        </div>
-                        <div class="form-group7">
-                            <label for="check-out">Check-out date</label>
-                            <input type="date" id="check-out" name="check-out" required>
-                        </div>
-                        <div class="form-group7">
-                            <label for="children">Number of children</label>
-                            <input type="number" id="children" name="children" min="0" value="0">
-                        </div>
-                        <div class="form-group7">
-                            <label for="adults">Number of adults</label>
-                            <input type="number" id="adults" name="adults" min="1" value="1">
-                        </div>
-                        <div class="form-group7">
-                            <label for="rooms">Number of rooms</label>
-                            <input type="number" id="rooms" name="rooms" min="1" value="1">
-                        </div>
-
-                        <button class="hotelbook-button" type="submit">Search</button>
-                    </form>
-                </div>
-            </section>
+            
 
 
         </div>
         <div class="city-attractions">
-            <h1><big>Popular Attractions in India</big></h1>
+            <h1>Top 50+ Most Beautiful Popular Attractions in India</h1>
             <div class="container">
                 <div class="carousel-container">
 
@@ -696,53 +694,54 @@
                         <div class="card-grid" id="card-grid">
                             <!-- Card 1 -->
                             <div class="cardcity">
-                                <img src="./All-photos/mumbaiimage.jpg" alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/1. Taj Mahal top 50 india.jpeg"
+                                    alt="1. Taj Mahal">
                                 <div class="cardcity-info">
                                     <div class="rating">
                                         <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>25,936 reviews</span>
                                     </div>
-                                    <h2>Mumbai</h2>
+                                    <h2>1. Taj Mahal</h2>
                                     <p>697 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/2. Agra Fort top 50 india.jpg"
+                                 alt="2. Agra Fort">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.3/5</span>
+                                        <span>726 reviews</span>
                                     </div>
-                                    <h2>New Delhi</h2>
+                                    <h2>2. Agra Fort</h2>
                                     <p>480 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/3. Taj Mahotsav top 50 india.jpg"
+                                    alt="3. Taj Mahotsav">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.6/5</span>
+                                        <span>666 reviews</span>
                                     </div>
-                                    <h2>Bengaluru</h2>
+                                    <h2>3. Taj Mahotsav</h2>
                                     <p>994 hotels</p>
 
                                 </div>
                             </div>
 
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/4. Fatehpur Sikri top 50 india.jpg"
+                                    alt="4. Fatehpur Sikri">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.0/5</span>
+                                        <span>836 reviews</span>
                                     </div>
-                                    <h2>Chennai</h2>
+                                    <h2>4. Fatehpur Sikri</h2>
                                     <p>468 hotels</p>
 
                                 </div>
@@ -750,130 +749,640 @@
 
 
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/5. Itimad-ud-daulah's Tomb top 50 india.jpg"
+                                    alt="5. Itimad-ud-daulah's Tomb">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.4/5</span>
+                                        <span>476 reviews</span>
                                     </div>
-                                    <h2>Gurugram</h2>
+                                    <h>25. Itimad-ud-daulah's Tomb</h2>
                                     <p>417 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/6. Mehtab Bagh top 50 india.jpg"
+                                    alt="6. Mehtab Bagh">
                                 <div class="cardcity-info">
                                     <div class="rating">
                                         <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>13,766 reviews</span>
                                     </div>
-                                    <h2>Kolkata</h2>
+                                    <h2>6. Mehtab Bagh</h2>
                                     <p>446 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/7. Akbar's Tomb top 50 india.jpg"
+                                 alt="7. Akbar's Tomb">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.0/5</span>
+                                        <span>19,836 reviews</span>
                                     </div>
-                                    <h2>Pune</h2>
+                                    <h2>7. Akbar's Tomb</h2>
                                     <p>632 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/8. Jama Masjid top 50 india.jpg"
+                                    alt="8. Jama Masjid">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.4/5</span>
+                                        <span>14,056 reviews</span>
                                     </div>
-                                    <h2>Lucknow</h2>
+                                    <h2>8. Jama Masjid</h2>
                                     <p>401 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/9. Jhangir Mahal top 50 india.jpg" 
+                                alt="9. Jhangir Mahal">
                                 <div class="cardcity-info">
                                     <div class="rating">
                                         <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>976 reviews</span>
                                     </div>
-                                    <h2>Dehradun</h2>
+                                    <h2>9. Jhangir Mahal</h2>
                                     <p>306 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/10. Dolphin Water Park top 50 india.jpg"
+                                    alt="10. Dolphin Water Park">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.1/5</span>
+                                        <span>17,086 reviews</span>
                                     </div>
-                                    <h2>Ahmedabad</h2>
+                                    <h2>10. Dolphin Water Park</h2>
                                     <p>366 hotels</p>
 
                                 </div>
                             </div>
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Lazy Gaga Youth Hostel">
+                                <img src="./Top 50 popular palces in india/11. Taj Museum top 50 india.jpg"
+                                    alt="11. Taj Museum">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.3/5</span>
+                                        <span>13,366 reviews</span>
                                     </div>
-                                    <h2>Hyderabad</h2>
+                                    <h2>11. Taj Museum</h2>
                                     <p>406 hotels</p>
 
                                 </div>
                             </div>
-
-
-
-
-
-
-
-
-                            <!-- Card 2 -->
+                            <!-- Card 12 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Hostelfly">
+                                <img src="./Top 50 popular palces in india/12. City Palace, Udaipur top 50 india.jpg"
+                                    alt="12. City Palace, Udaipur">
                                 <div class="cardcity-info">
-
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>3.8/5</span>
+                                        <span>14,986 reviews</span>
                                     </div>
-
-                                    <h2>Jaipur</h2>
+                                    <h2>12. City Palace, Udaipur</h2>
                                     <p>712 hotels</p>
 
                                 </div>
                             </div>
-                            <!-- CTA Card -->
-                            <div class="cta-card">
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/13. Lake Pichola top 50 india.jpg"
+                                    alt="13. Lake Pichola">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>13,933 reviews</span>
+                                    </div>
+                                    <h2>13. Lake Pichola </h2>
+                                    <p>306 hotels</p>
 
-                                <div class="cta-content">
-                                    <img src="./All-photos/more hotels image.jpg">
-                                    <h3>Explore more hotels</h3>
-                                    <button>Go Now</button>
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/14. Gulab Bagh and Zoo top 50 india.jpg"
+                                    alt="14. Gulab Bagh and Zoo">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>15,548 reviews</span>
+                                    </div>
+                                    <h2>14. Gulab Bagh and Zoo</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/15. Bagore Ki Haveli top 50 india.jpeg"
+                                    alt="15. Bagore Ki Haveli">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>9,676 reviews</span>
+                                    </div>
+                                    <h2>15. Bagore Ki Haveli</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/16. Jag Mandir Palace top 50 india.jpg"
+                                    alt="16. Jag Mandir Palace">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.8/5</span>
+                                        <span>11,775 reviews</span>
+                                    </div>
+                                    <h2>16. Jag Mandir Palace</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/17. Eklingji Temple top 50 india.jpg"
+                                    alt="17. Eklingji Temple">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>8,543 reviews</span>
+                                    </div>
+                                    <h2>17. Eklingji Temple</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/18. Ahar Cenotaphs top 50 india.jpg"
+                                    alt="18. Ahar Cenotaphs">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>5,267 reviews</span>
+                                    </div>
+                                    <h2>18. Ahar Cenotaphs</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/19. Fateh Sagar Lake top 50 india.jpg"
+                                    alt="19. Fateh Sagar Lake">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>7,623 reviews</span>
+                                    </div>
+                                    <h2>19. Fateh Sagar Lake</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/20. Ambrai Ghat top 50  india.jpg"
+                                    alt="20. Ambrai Ghat">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>3,566 reviews</span>
+                                    </div>
+                                    <h2>20. Ambrai Ghat</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/21. Tiger Hill top 50 india.jpg"
+                                    alt="21. Tiger Hill">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>6,721 reviews</span>
+                                    </div>
+                                    <h2>21. Tiger Hill</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/22. Darjeeling Himalayan Railway top 50 india.jpg"
+                                    alt="22. Darjeeling Himalayan Railway">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>5,607 reviews</span>
+                                    </div>
+                                    <h2>22. Darjeeling Himalayan Railway</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/23. Batasia Loop top 50 india.jpg"
+                                    alt="23. Batasia Loop">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>9,600 reviews</span>
+                                    </div>
+                                    <h2>23. Batasia Loop</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/24. Tea Plantations Darjeeling top 50.jpg"
+                                    alt="24. Tea Plantations Darjeeling">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>6,564 reviews</span>
+                                    </div>
+                                    <h2>24. Tea Plantations Darjeeling</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/25. Darjeeling Ropeway top 50 india.jpg"
+                                    alt="25. Darjeeling Ropeway">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>4,234 reviews</span>
+                                    </div>
+                                    <h2>25. Darjeeling Ropeway</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/26. Kanchenjunga top 50 india.jpg"
+                                    alt="26. Kanchenjunga">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>3,676 reviews</span>
+                                    </div>
+                                    <h2>26. Kanchenjunga</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/27. Darjeeling Peace Pagoda top 50 india.jpg"
+                                    alt="27. Darjeeling Peace Pagoda">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>1,459 reviews</span>
+                                    </div>
+                                    <h2>27. Darjeeling Peace Pagoda</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/28. Chowrasta Darjeeling top 50 india.jpg"
+                                    alt="28. Chowrasta Darjeeling">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>678 reviews</span>
+                                    </div>
+                                    <h2>28. Chowrasta Darjeeling</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/29. Sandakphu Trek top 50 india.jpg"
+                                    alt="29. Sandakphu Trek">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>1,276 reviews</span>
+                                    </div>
+                                    <h2>29. Sandakphu Treka</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/30. Darjeeling Rock Garden top 50 india.jpg"
+                                    alt="30. Darjeeling Rock Garden">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>4,326 reviews</span>
+                                    </div>
+                                    <h2>30. Darjeeling Rock Garden</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/31. Singalila National Park top 50 india.jpg"
+                                    alt="31. Singalila National Park">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.7/5</span>
+                                        <span>2,246 reviews</span>
+                                    </div>
+                                    <h2>31. Singalila National Park</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/32. Nightingale Park top 50 india.jpg"
+                                    alt="32. Nightingale Park">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.8/5</span>
+                                        <span>6,632 reviews</span>
+                                    </div>
+                                    <h2>32. Nightingale Park</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/33. Dali Monastery top 50 india.jpg"
+                                    alt="33. Dali Monastery">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>6,986 reviews</span>
+                                    </div>
+                                    <h2>33. Dali Monastery</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/34. Ghoom Monastery top 50 india.jpg"
+                                    alt="34. Ghoom Monastery">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>3,479 reviews</span>
+                                    </div>
+                                    <h2>34. Ghoom Monastery</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/35. River Rafting in Teesta top 50 india.jpg"
+                                    alt="35. River Rafting in Teesta">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>7,643 reviews</span>
+                                    </div>
+                                    <h2>35. River Rafting in Teesta</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/36. Tinchuley top 50 india.jpg"
+                                    alt="36. Tinchuley">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>11,258 reviews</span>
+                                    </div>
+                                    <h2>36. Tinchuley</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/37. Happy Valley Tea Estate top 50 india.jpg"
+                                    alt="37. Happy Valley Tea Estate">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>3,285 reviews</span>
+                                    </div>
+                                    <h2>37. Happy Valley Tea Estate</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/38. Darjeeling Observatory Hill top 50 india.jpg"
+                                    alt="38. Darjeeling Observatory Hill">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>2,586 reviews</span>
+                                    </div>
+                                    <h2>38. Darjeeling Observatory Hill</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/39. Lamahatta Eco Park top 50 india.jpg"
+                                    alt="39. Lamahatta Eco Park">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>1,632 reviews</span>
+                                    </div>
+                                    <h2>39. Lamahatta Eco Park</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/40. Lepchajagat top 50 india.jpg" 
+                                alt="40. Lepchajagat">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>5,987 reviews</span>
+                                    </div>
+                                    <h2>40. Lepchajagat</h2>
+                                    <p>697 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/41. Himalayan Tibet Museum top 50 india.jpg"
+                                    alt="41. Himalayan Tibet Museum">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>9,745 reviews</span>
+                                    </div>
+                                    <h2>41. Himalayan Tibet Museum</h2>
+                                    <p>480 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/42. Golden Temple top 50 india.jpg"
+                                    alt="42. Golden Temple">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>4,670 reviews</span>
+                                    </div>
+                                    <h2>42. Golden Temple</h2>
+                                    <p>994 hotels</p>
+
+                                </div>
+                            </div>
+
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/43. Wagah Border top 50 india.jpeg"
+                                    alt="43. Wagah Border">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>7,912reviews</span>
+                                    </div>
+                                    <h2>43. Wagah Border</h2>
+                                    <p>468 hotels</p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/44. Calangute Beach top 50 india.jpg"
+                                    alt="44. Calangute Beach">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>3,897 reviews</span>
+                                    </div>
+                                    <h2>44. Calangute Beach</h2>
+                                    <p>417 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/45. Water Sports in Goa top 50 india.jpg"
+                                    alt="45. Water Sports in Goa">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>5,344 reviews</span>
+                                    </div>
+                                    <h2>45. Water Sports in Goa</h2>
+                                    <p>446 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/46. Anjuna Beach top 50 india.jpg"
+                                    alt="46. Anjuna Beach">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>6,532 reviews</span>
+                                    </div>
+                                    <h2>46. Anjuna Beach</h2>
+                                    <p>632 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/47. Thalassa top 50 india.jpg"
+                                    alt="47. Thalassa">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>9,956 reviews</span>
+                                    </div>
+                                    <h2>47. Thalassa</h2>
+                                    <p>401 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/48. Basilica of Bom Jesus top 50 india.jpg"
+                                    alt="48. Basilica of Bom Jesus">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>13,566 reviews</span>
+                                    </div>
+                                    <h2>48. Basilica of Bom Jesus</h2>
+                                    <p>306 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/49. Butterfly Beach top 50 india.jpg"
+                                    alt="49. Butterfly Beach">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>15,306 reviews</span>
+                                    </div>
+                                    <h2>49. Ahmedabad</h2>
+                                    <p>366 hotels</p>
+
+                                </div>
+                            </div>
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/50. Divar Island top 50 india.jpg"
+                                    alt="50. Divar Island">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>12,978 reviews</span>
+                                    </div>
+                                    <h2>50. Divar Island</h2>
+                                    <p>406 hotels</p>
+
+                                </div>
+                            </div>
+                            <!-- Card 51 -->
+                            <div class="cardcity">
+                                <img src="./Top 50 popular palces in india/51. Dona Paula top 50 india.jpg"
+                                    alt="51. Dona Paula">
+                                <div class="cardcity-info">
+
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>8,906 reviews</span>
+                                    </div>
+
+                                    <h2>51. Dona Paula</h2>
+                                    <p>712 hotels</p>
+
                                 </div>
                             </div>
                             <!-- Add more cards here as needed -->
+
+                            <div class="cta-card">
+                                <img src="./Top 50 popular palces in india/52. Arambol Beach top 50 india.jpg"
+                                    alt="52. Arambol Beach">
+                                <div class="cta-content">
+
+                                    <div class="rating">
+                                        <span>4.8/5</span>
+                                        <span>6,365 reviews</span>
+                                    </div>
+                                    <h2>52. Arambol Beach</h2>
+                                    <p>2052 hotels</p>
+
+                                </div>
+                            </div>
+                            <!-- Please do not add more cards here because this is the last or cta card to maintain the seciton-->
                         </div>
                     </div>
 
@@ -886,7 +1395,7 @@
             <script src="script.js"></script>
         </div>
         <div class="worldwide-attractions">
-            <h1><big>Popular Attractions Worldwide</big></h1>
+            <h1>Top 50+ Most Beautiful Popular Attractions Worldwide</h1>
             <div class="container">
                 <div class="carousel-container">
 
@@ -898,170 +1407,691 @@
                         <div class="card-grid" id="card-grid-worldwide">
                             <!-- Card 1 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 1">
+                                <img src="./Top 40 hidden gems worldwide/1. Côn Đảo, Vietnam top 40 worldwide.webp"
+                                    alt="1. Côn Đảo, Vietnam">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.3/5</span>
+                                        <span>1,136 reviews</span>
                                     </div>
-                                    <h2>Guangzhou</h2>
+                                    <h2>1. Côn Đảo, Vietnam</h2>
                                     <p>5,046 hotels</p>
                                 </div>
                             </div>
 
                             <!-- Card 2 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/2. Gili Trawangan, Indonesia top 40 world wide.webp"
+                                    alt="2. Gili Trawangan, Indonesia">
                                 <div class="cardcity-info">
                                     <div class="rating">
                                         <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>13,836 reviews</span>
                                     </div>
-                                    <h2>Shanghai</h2>
+                                    <h2>2. Gili Trawangan, Indonesia</h2>
                                     <p>7,213 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 3 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/3. Pico, Portugal top 40 world wide.webp"
+                                    alt="3. Pico, Portugal">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.2/5</span>
+                                        <span>3,176 reviews</span>
                                     </div>
-                                    <h2>Bangkok</h2>
+                                    <h2>3. Pico, Portugal</h2>
                                     <p>2,052 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 4 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 3">
+                                <img src="./Top 40 hidden gems worldwide/4. Sandön, Sweden top 40 world wide.webp"
+                                    alt="4. Sandön, Sweden">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.0/5</span>
+                                        <span>11,765 reviews</span>
                                     </div>
-                                    <h2>Shenzhen</h2>
+                                    <h2>4. Sandön, Sweden</h2>
                                     <p>4,819 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 5 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/5. Scrub Island, British Virgin Islands top 40 world wide.webp"
+                                    alt="5. Scrub Island, British Virgin Islands">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.6/5</span>
+                                        <span>13,778 reviews</span>
                                     </div>
-                                    <h2>Dubai</h2>
+                                    <h2>5. Scrub Island, British Virgin Islands</h2>
                                     <p>929 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 6 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/6. Skopelos, Greece top 40 world wide.webp"
+                                    alt="6. Skopelos, Greece">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.3/5</span>
+                                        <span>15,009 reviews</span>
                                     </div>
-                                    <h2>Hong Kong</h2>
+                                    <h2>6. Skopelos, Greece</h2>
                                     <p>720 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 7 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/7. Caye Caulker, Belize top 40 world wide.webp"
+                                    alt="7. Caye Caulker, Belize">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.1/5</span>
+                                        <span>16,985 reviews</span>
                                     </div>
-                                    <h2>Pattaya</h2>
+                                    <h2>7. Caye Caulker, Belize</h2>
                                     <p>859 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 8 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/8. Flatey, Iceland top 40 world wide.webp"
+                                    alt="8. Flatey, Iceland">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.4/5</span>
+                                        <span>21,923 reviews</span>
                                     </div>
-                                    <h2>Yiwu</h2>
+                                    <h2>8. Flatey, Iceland</h2>
                                     <p>224 hotels</p>
                                 </div>
                             </div>
-                            <!-- Card9 -->
+                            <!-- Card 9 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/9. Gozo, Malta top 40 world wide.webp"
+                                    alt="9. Gozo, Malta">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.2/5</span>
+                                        <span>14,567 reviews</span>
                                     </div>
-                                    <h2>Phuket</h2>
+                                    <h2>9. Gozo, Malta</h2>
                                     <p>1,329 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 10 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/10. Swaraj Dweep, India top 40 world wide.webp"
+                                    alt="10. Swaraj Dweep, India">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.6/5</span>
+                                        <span>12,636 reviews</span>
                                     </div>
-                                    <h2>Kuala Lumpur</h2>
+                                    <h2>10. Swaraj Dweep, India</h2>
                                     <p>1,060 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 11 -->
                             <div class="cardcity">
-                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
-                                    alt="Town 2">
+                                <img src="./Top 40 hidden gems worldwide/11. Rodrigues, Mauritius top 40 world wide.webp"
+                                    alt="11. Rodrigues, Mauritius ">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.3/5</span>
+                                        <span>16,986reviews</span>
                                     </div>
-                                    <h2>Bangkok</h2>
+                                    <h2>11. Rodrigues, Mauritius </h2>
                                     <p>2052 hotels</p>
                                 </div>
                             </div>
                             <!-- Card 12 -->
                             <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/12. Great Barrier Island, New Zealand top 40 world wide.webp"
+                                    alt="12. Great Barrier Island, New Zealand">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>13,946 reviews</span>
+                                    </div>
+                                    <h2>12. Great Barrier Island, New Zealand</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 13 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/13. Pulau Mabul, Malaysia top 40 world wide.webp"
+                                    alt="13. Pulau Mabul, Malaysia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>17,985 reviews</span>
+                                    </div>
+                                    <h2>13. Pulau Mabul, Malaysia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 14 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/14. Jicaro Island, Nicaragua top 40 world wide.webp"
+                                    alt="14. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>9,763 reviews</span>
+                                    </div>
+                                    <h2>14. Bangkok</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 15 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/15. Robinson Crusoe Island, Chile top 40 world wide.webp"
+                                    alt="15. Robinson Crusoe Island, Chile">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4./5</span>
+                                        <span>8,298 reviews</span>
+                                    </div>
+                                    <h2>15. Robinson Crusoe Island, Chile</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 16 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/16. Colonsay, Scotland top 40 world wide.webp"
+                                    alt="16. Colonsay, Scotland">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>24,998 reviews</span>
+                                    </div>
+                                    <h2>16. Colonsay, Scotland</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 17 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/17. Inis Meáin, Ireland top 40 world wide.webp"
+                                    alt="17. Inis Meáin, Ireland">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>17,780 reviews</span>
+                                    </div>
+                                    <h2>17. Inis Meáin, Ireland</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 18 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/18. La Maddalena, Sardinia top 40 world wide.webp"
+                                    alt="18. La Maddalena, Sardinia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>14,503 reviews</span>
+                                    </div>
+                                    <h2>18. La Maddalena, Sardinia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 19 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/19. Sir Bani Yas Island, United Arab Emirates top 40 world wide.webp"
+                                    alt="19. Sir Bani Yas Island, United Arab Emirates">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>21,378 reviews</span>
+                                    </div>
+                                    <h2>19. Sir Bani Yas Island, United Arab Emirates</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 20 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/20. Fogo Island, Newfoundland top 40 world wide.webp"
+                                    alt="20. Fogo Island, Newfoundland">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>19,796 reviews</span>
+                                    </div>
+                                    <h2>20. Fogo Island, Newfoundland</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 21 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/21. Lummi Island, Washington top 40 world wide.webp"
+                                    alt="21. Lummi Island, Washington">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>18,336 reviews</span>
+                                    </div>
+                                    <h2>21. Lummi Island, Washington</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 22 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/22. Salt Spring Island, British Columbia top 40 world wide.webp"
+                                    alt="22. Salt Spring Island, British Columbia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>13,749 reviews</span>
+                                    </div>
+                                    <h2>22. Salt Spring Island, British Columbia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 23 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/23. Islas del Rosario, Colombia top 40 world wide.webp"
+                                    alt="23. Islas del Rosario, Colombia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>21,567 reviews</span>
+                                    </div>
+                                    <h2>23. Islas del Rosario, Colombia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 24 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/24. Southport Island, Maine top 40 world wide.webp"
+                                    alt="24. Southport Island, Maine">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>15,278 reviews</span>
+                                    </div>
+                                    <h2>24. Southport Island, Maine</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 25 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/25. La Gomera, Spain top 40 world wide.webp"
+                                    alt="25. La Gomera, Spain">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>9,678 reviews</span>
+                                    </div>
+                                    <h2>25. La Gomera, Spain</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 26 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/26. Filicudi, Sicily top 40 world wide.webp"
+                                    alt="26. Filicudi, Sicily">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.7/5</span>
+                                        <span>19,998 reviews</span>
+                                    </div>
+                                    <h2>26. Filicudi, Sicily</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 27 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/27. Iriomote Island, Japan top 40 world wide.webp"
+                                    alt="27. Iriomote Island, Japan">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>15,986 reviews</span>
+                                    </div>
+                                    <h2>27. Iriomote Island, Japan</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 28 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/28. Portsmouth, North Carolin top 40 world wide.webp"
+                                    alt="28. Portsmouth, North Carolina">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>22,896 reviews</span>
+                                    </div>
+                                    <h2>28. Portsmouth, North Carolina</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 29 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/29. Mnemba Island, Zanzibar top 40 world wide.webp"
+                                    alt="29. Mnemba Island, Zanzibar">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>15,237 reviews</span>
+                                    </div>
+                                    <h2>29. Mnemba Island, Zanzibar</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 30 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/30. Boa Vista, Cape Verde top 40 world wide.webp"
+                                    alt="30. Boa Vista, Cape Verde">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>14,678 reviews</span>
+                                    </div>
+                                    <h2>30. Boa Vista, Cape Verde</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 31 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/31. Filandia, Colombia top 40 world wide.webp"
+                                    alt="31. Filandia, Colombia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>16,876 reviews</span>
+                                    </div>
+                                    <h2>31. Filandia, Colombia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 32 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/32. Southern Tunisia top 40 world wide.webp"
+                                    alt="32. Southern Tunisia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>13,008 reviews</span>
+                                    </div>
+                                    <h2>32. Southern Tunisia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 33 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/33. Prince Edward Island, Canada top 40 world wide.webp"
+                                    alt="33. Prince Edward Island, Canada">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>13,896 reviews</span>
+                                    </div>
+                                    <h2>33. Prince Edward Island, Canada</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 34 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/34. Sibiu, Romania top 40 world wide.webp"
+                                    alt="34. Sibiu, Romania">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>12,712 reviews</span>
+                                    </div>
+                                    <h2>34. Sibiu, Romania</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 35 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/35. Newcastle, Australia top 40 world wide.webp"
+                                    alt="35. Newcastle, Australia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.7/5</span>
+                                        <span>14,679 reviews</span>
+                                    </div>
+                                    <h2>35. Newcastle, Australia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 36 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/36. Bentonville, Arkansas, USA top 40 world wide.webp"
+                                    alt="36. Bentonville, Arkansas, USA">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>18,106 reviews</span>
+                                    </div>
+                                    <h2>36. Bentonville, Arkansas, USA</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 37 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/37. Brown Station, Antarctica top 40 world wide.webp"
+                                    alt="37. Brown Station, Antarctica">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>16,130 reviews</span>
+                                    </div>
+                                    <h2>37. Brown Station, Antarctica</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 38 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/38. Mongolia top 40 world wide.webp"
+                                    alt="38. Mongolia">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>11,996 reviews</span>
+                                    </div>
+                                    <h2>38. Mongolia</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 39 -->
+                            <div class="cardcity">
+                                <img src="./Top 40 hidden gems worldwide/39. Cuenca, Ecuador top 40 world wide.webp"
+                                    alt="39. Cuenca, Ecuador">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>15,536 reviews</span>
+                                    </div>
+                                    <h2>39. Cuenca, Ecuador</h2>
+                                    <p>2052 hotels</p>
+                                </div>
+                            </div>
+
+                            <!-- Add more hidden gems worldwide here-->
+
+                            <!-- Card 40 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="40. Town 1">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.5/5</span>
+                                        <span>13,936 reviews</span>
+                                    </div>
+                                    <h2>40. Guangzhou</h2>
+                                    <p>5,046 hotels</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 41 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="41. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>15,789 reviews</span>
+                                    </div>
+                                    <h2>41. Shanghai</h2>
+                                    <p>7,213 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 42 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="42. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>19,235 reviews</span>
+                                    </div>
+                                    <h2>42. Bangkok</h2>
+                                    <p>2,052 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 43 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="43.Town 3">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>16,543 reviews</span>
+                                    </div>
+                                    <h2>Shenzhen</h2>
+                                    <p>4,819 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 44 -->
+                            <div class="cardcity">
                                 <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
                                     alt="Town 2">
                                 <div class="cardcity-info">
                                     <div class="rating">
-                                        <span>4.5/5</span>
-                                        <span>136 reviews</span>
+                                        <span>4.3/5</span>
+                                        <span>16,890 reviews</span>
                                     </div>
-                                    <h2>Bangkok</h2>
+                                    <h2>44. Dubai</h2>
+                                    <p>929 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 45 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="45. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>18,765 reviews</span>
+                                    </div>
+                                    <h2>45. Hong Kong</h2>
+                                    <p>720 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 46 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="46. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.1/5</span>
+                                        <span>17,986 reviews</span>
+                                    </div>
+                                    <h2>46. Pattaya</h2>
+                                    <p>859 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 47 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="47. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.4/5</span>
+                                        <span>14,854 reviews</span>
+                                    </div>
+                                    <h2>47. Yiwu</h2>
+                                    <p>224 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 48. -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="48. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>18,831 reviews</span>
+                                    </div>
+                                    <h2>48. Phuket</h2>
+                                    <p>1,329 hotels</p>
+                                </div>
+                            </div>
+                            <!-- Card 49 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="49. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.3/5</span>
+                                        <span>11,136 reviews</span>
+                                    </div>
+                                    <h2>49. Kuala Lumpur</h2>
+                                    <p>11,060 hotels</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 50 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="50. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.0/5</span>
+                                        <span>10,897 reviews</span>
+                                    </div>
+                                    <h2>50. Bangkok</h2>
                                     <p>2052 hotels</p>
                                 </div>
                             </div>
-                            <!-- CTA Card -->
-                            <div class="cta-card">
-
-                                <div class="cta-content">
-                                    <img src="./All-photos/more hotels image.jpg">
-                                    <h3>Explore more hotels</h3>
-                                    <button>Go Now</button>
+                            <!-- Card 51 -->
+                            <div class="cardcity">
+                                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg"
+                                    alt="51. Town 2">
+                                <div class="cardcity-info">
+                                    <div class="rating">
+                                        <span>4.6/5</span>
+                                        <span>19,643 reviews</span>
+                                    </div>
+                                    <h2>51. Kuala Lumpur</h2>
+                                    <p>11,060 hotels</p>
                                 </div>
                             </div>
+
+                            <!-- Add more cards here as needed -->
+
+                            <div class="cta-card">
+                                <img src="./Top 30 beautiful places/40. Chatpal, Kashmir top 30.jpg"
+                                    alt="52. Chatpal, Kashmir">
+                                <div class="cta-content">
+
+                                    <div class="rating">
+                                        <span>4.2/5</span>
+                                        <span>13,365 reviews</span>
+                                    </div>
+                                    <h2>52. Chatpal, Kashmir</h2>
+                                    <p>2052 hotels</p>
+
+                                </div>
+                            </div>
+                            <!-- Please do not add more cards here because this is the last or cta card to maintain the seciton-->
                         </div>
                     </div>
 
@@ -1081,9 +2111,9 @@
                         <li><a href="#">Service Guarantee</a></li>
                         <li><a href="#">More Service Info</a></li>
                         <li>
-                            <a href="#"><img src="./All-photos/facebook footer image.png" alt="Facebook"></a>
-                            <a href="#"><img src="./All-photos/twitter-icon footer image.png" alt="Twitter"></a>
-                            <a href="#"><img src="./All-photos/youtube icon footer image.png" alt="YouTube"></a>
+                            <a href="#"><img src="/All-photos/facebook footer image.png" alt="Facebook"></a>
+                            <a href="#"><img src="/All-photos/twitter-icon footer image.png" alt="Twitter"></a>
+                            <a href="#"><img src="All-photos/youtube icon footer image.png" alt="YouTube"></a>
                         </li>
                     </ul>
                 </div>
